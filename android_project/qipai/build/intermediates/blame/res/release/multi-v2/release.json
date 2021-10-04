@@ -1,0 +1,88 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\qipai_002\\qipai_002\\SVN\\bzdz\\qipai\\build\\intermediates\\res\\merged\\release\\values-v21_values-v21.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\qipai_002\\qipai_002\\SVN\\bzdz\\qipai\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "0",
+                        "startOffsets": "53",
+                        "endLines": "3",
+                        "endColumns": "8",
+                        "endOffsets": "153"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "3",
+                        "endColumns": "8",
+                        "endOffsets": "154"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\qipai_002\\qipai_002\\SVN\\bzdz\\qipai\\build\\intermediates\\res\\merged\\release\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\qipai_002\\qipai_002\\SVN\\bzdz\\qipai\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "2,2",
+                        "startOffsets": "55,96",
+                        "endColumns": "39,65",
+                        "endOffsets": "92,159"
+                    },
+                    "to": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,97",
+                        "endColumns": "41,67",
+                        "endOffsets": "92,160"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-2\\files-2.1\\6fb7c6e8b46390eafcec96c3599c21d2\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "21",
+                        "endColumns": "12",
+                        "endOffsets": "970"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "265",
+                        "endLines": "25",
+                        "endColumns": "12",
+                        "endOffsets": "1180"
+                    }
+                },
+                {
+                    "source": "D:\\qipai_002\\qipai_002\\SVN\\bzdz\\qipai\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "5,2,7",
+                        "startColumns": "0,0,0",
+                        "startOffsets": "190,53,288",
+                        "endLines": "6,4,10",
+                        "endColumns": "8,8,8",
+                        "endOffsets": "286,188,513"
+                    },
+                    "to": {
+                        "startLines": "4,26,29",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "165,1185,1323",
+                        "endLines": "5,28,32",
+                        "endColumns": "8,8,8",
+                        "endOffsets": "260,1318,1545"
+                    }
+                }
+            ]
+        }
+    ]
+}

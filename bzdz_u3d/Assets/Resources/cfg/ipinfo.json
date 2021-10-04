@@ -1,0 +1,12 @@
+{
+    "ipVer": 20210529,
+    "mainEntranceIp": "http://bzpoke.cn:80/static/",
+    "devEntranceIp": "http://192.168.0.7:80/static/",
+    "localEntranceIp": "http://127.0.0.1:8080/",
+    "webServerPath": "f_game/sub_game/serverInfo1.conf",
+    "resourcesPath": "f_game/sub_game/",
+    "server_type": 2,
+    "download_type": 2,
+    "enable_debug": true,
+    "enable_hot_update": true
+}

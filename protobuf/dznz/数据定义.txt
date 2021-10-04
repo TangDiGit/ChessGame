@@ -1,0 +1,95 @@
+
+//命令定义
+enum enBaseServerSubCmd
+{
+	SUB_S_READY_START = 1,									//准备下注
+	SUB_S_GAME_START,										//游戏开始
+	SUB_S_PLACE_JETTON,										//用户下注
+	SUB_S_GAME_END,											//游戏结束
+	SUB_S_SEND_RECORD,										//游戏记录
+	SUB_S_PLACE_JETTON_FAIL,								//下注失败
+	SUB_S_APPLY_BANKER,										//申请庄家
+	SUB_S_CANCEL_BANKER,									//下庄
+	SUB_S_CHANGE_BANKER,									//转换庄家
+	SUB_S_APPLY_BANKER_LIST,										//申请庄家列表
+	SUB_S_TABLE_INFO,									//场景信息
+	SUB_S_CLEAR_RECORD,										//重设记录
+	SUB_S_GET_USER_LIST,									//玩家列表
+
+	SUB_S_INIT_USER_SIT_INFO,								//初始化客户端占位信息
+	SUB_S_UPDATE_USER_SIT_INFO,								//更新(主要更细金币)
+	SUB_S_USER_SIT_DOWN,								//新玩家占位坐下
+	SUB_S_USER_SIT_UP,									//客户端占位起立
+	
+	SUB_S_BASE_END,											//结束标记
+};
+
+
+enum enServerSubCmd
+{
+	SUB_S_Test = SUB_S_BASE_END,									//游戏空闲
+	SUB_S_SEND_JACK_POT,
+	SUB_S_SEND_BIG_AREA_WIN_INFO,								//手牌记录和牌型记录
+	SUB_S_HISTORY_RECORDS,								//历史记录今日统计
+	SUB_S_END,												//结束标记
+};
+
+enum enBaseClientSubCmd
+{
+	SUB_C_PLACE_JETTON = 1,								//用户下注
+	SUB_C_GET_USER_LIST,								//玩家列表
+	SUB_C_APPLY_BANKER,
+	SUB_C_CANCEL_BANKER,
+	SUB_C_GET_APPLY_BANKER_LIST,							//庄家列表
+	SUB_C_USER_SIT_DOWN,								//占位坐下
+	SUB_C_USER_SIT_UP,									//占位起立
+	SUB_C_BASE_END,										//结束标记
+};
+
+enum enClientSubCmd
+{
+	SUB_C_Test = SUB_C_BASE_END,									//游戏空闲
+	SUB_C_GET_JACK_POT,
+	SUB_C_BIG_AREA_WIN_INFO,
+	SUB_C_HISTORY_RECORDS,
+};
+
+下注区域
+enum AreaType
+{
+	AREATYPE_START = 0,
+	AREATYPE_HONG = AREATYPE_START,		// 红
+	AREATYPE_LAN,					// 蓝
+	AREATYPE_PING,					// 平
+	AREATYPE_SP_TONG_HA,			//
+	AREATYPE_SP_LIAN_PAI,			//
+	AREATYPE_SP_DUI_ZI,					//
+	AREATYPE_SP_TONG_HUA_LIAN,			//
+	AREATYPE_SP_DUI_A,				//
+	AREATYPE_WIN_GAO_DUI,			//
+	AREATYPE_WIN_DOUBLE_DUI,			//
+	AREATYPE_WIN_SAN_SHUN_TONGHUA,			//
+	AREATYPE_WIN_HU_LU,				//
+	AREATYPE_WIN_FOUR_THS_HJ,			//
+	AREATYPE_COUNT,			//
+};
+
+//扑克类型
+#define CT_SINGLE					1									//单牌类型
+#define CT_ONE_DOUBLE				2									//对子类型
+#define CT_TWO_DOUBLE				3									//两对类型
+#define CT_THREE_TIAO				4									//三条类型
+#define	CT_SHUN_ZI					5									//顺子类型
+#define CT_TONG_HUA					6									//同花类型
+#define CT_HU_LU					7									//葫芦类型
+#define CT_TIE_ZHI					8									//铁支类型
+#define CT_TONG_HUA_SHUN			9									//同花顺型
+#define CT_KING_TONG_HUA_SHUN		10									//皇家同花顺
+
+//扑克手牌类型
+#define CT_SP_SINGLE					1									//
+#define CT_SP_TONG_HUA					2									//
+#define CT_SP_LIAN				3									//
+#define CT_SP_DOUBLE				4									//
+#define CT_SP_TONG_LIAN				5									//
+#define	CT_SP_DUI_A					6									//

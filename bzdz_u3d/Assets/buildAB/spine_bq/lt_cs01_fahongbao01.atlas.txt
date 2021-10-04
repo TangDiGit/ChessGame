@@ -1,0 +1,132 @@
+
+lt_cs01_fahongbao01.png
+size: 512,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm
+  rotate: false
+  xy: 325, 22
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 76, 10
+  size: 62, 52
+  orig: 62, 52
+  offset: 0, 0
+  index: -1
+brow
+  rotate: false
+  xy: 76, 2
+  size: 8, 6
+  orig: 8, 6
+  offset: 0, 0
+  index: -1
+ear
+  rotate: true
+  xy: 140, 2
+  size: 17, 23
+  orig: 17, 23
+  offset: 0, 0
+  index: -1
+eye
+  rotate: true
+  xy: 398, 20
+  size: 20, 11
+  orig: 20, 11
+  offset: 0, 0
+  index: -1
+eyeball
+  rotate: false
+  xy: 86, 2
+  size: 6, 6
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 2, 4
+  size: 72, 58
+  orig: 72, 58
+  offset: 0, 0
+  index: -1
+hand
+  rotate: false
+  xy: 165, 5
+  size: 18, 14
+  orig: 18, 14
+  offset: 0, 0
+  index: -1
+hat1
+  rotate: false
+  xy: 140, 21
+  size: 72, 41
+  orig: 72, 41
+  offset: 0, 0
+  index: -1
+hat2
+  rotate: false
+  xy: 214, 35
+  size: 59, 27
+  orig: 59, 27
+  offset: 0, 0
+  index: -1
+hat3
+  rotate: false
+  xy: 275, 25
+  size: 48, 37
+  orig: 48, 37
+  offset: 0, 0
+  index: -1
+hb1
+  rotate: false
+  xy: 450, 36
+  size: 32, 26
+  orig: 32, 26
+  offset: 0, 0
+  index: -1
+hb2
+  rotate: true
+  xy: 367, 12
+  size: 28, 29
+  orig: 28, 29
+  offset: 0, 0
+  index: -1
+hz1
+  rotate: false
+  xy: 411, 22
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+hz2
+  rotate: false
+  xy: 484, 46
+  size: 23, 16
+  orig: 23, 16
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 214, 21
+  size: 32, 12
+  orig: 32, 12
+  offset: 0, 0
+  index: -1
+mouth2
+  rotate: false
+  xy: 367, 42
+  size: 42, 20
+  orig: 42, 20
+  offset: 0, 0
+  index: -1
+yb
+  rotate: false
+  xy: 411, 38
+  size: 37, 24
+  orig: 37, 24
+  offset: 0, 0
+  index: -1

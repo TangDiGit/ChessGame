@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bz.bzdz"
+    android:installLocation="preferExternal"
+    android:versionCode="2"
+    android:versionName="1.0.3" > <!-- gps -->
+    <uses-sdk
+        android:minSdkVersion="23"
+        android:targetSdkVersion="30" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 网络权限 -->
+
+    <uses-feature android:glEsVersion="0x00020000" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+
+    <!-- for mta statistics, not necessary -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- for mta statistics, not necessary -->
+
+
+    <!-- gps -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+
+    <application
+        android:name="com.bz.bzdz.XInstallApplication"
+        android:allowBackup="false"
+        android:debuggable="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:testOnly="true"
+        android:theme="@style/UnityThemeSelector"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.bz.bzdz.XInstallActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorLandscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="xilqgw5y7" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.bz.bzdz.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.bz.bzdz"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微信分享回调 -->
+
+        <meta-data
+            android:name="unity.build-id"
+            android:value="a59d7433-a2c9-4967-a061-ee43ffb289e7" />
+        <meta-data
+            android:name="unity.splash-mode"
+            android:value="0" />
+        <meta-data
+            android:name="unity.splash-enable"
+            android:value="True" />
+
+        <!-- XInstall 的 AppKey -->
+        <meta-data
+            android:name="com.xinstall.APP_KEY"
+            android:value="lqgw5y7" />
+        <!-- XInstall 的 AppKey -->
+
+        <activity
+            android:name="com.xinstall.OnePXActivity"
+            android:theme="@style/OnePxActivityStyle" />
+
+        <meta-data
+            android:name="xinstall_third_platform"
+            android:value="XINSTALL_THIRDPLATFORM_ANDROID_THIRDPLATFORM_XINSTALL" />
+        <meta-data
+            android:name="xinstall_third_version"
+            android:value="XINSTALL_THIRDSDKVERSION_1.1.9_THIRDSDKVERSION_XINSTALL" />
+    </application>
+
+</manifest>

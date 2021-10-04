@@ -1,0 +1,69 @@
+
+yuanquan.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+b1
+  rotate: false
+  xy: 2, 522
+  size: 258, 258
+  orig: 258, 258
+  offset: 0, 0
+  index: -1
+b2
+  rotate: false
+  xy: 2, 262
+  size: 258, 258
+  orig: 258, 258
+  offset: 0, 0
+  index: -1
+b3
+  rotate: false
+  xy: 262, 522
+  size: 258, 258
+  orig: 258, 258
+  offset: 0, 0
+  index: -1
+b4
+  rotate: false
+  xy: 2, 2
+  size: 258, 258
+  orig: 258, 258
+  offset: 0, 0
+  index: -1
+b5
+  rotate: false
+  xy: 522, 522
+  size: 257, 258
+  orig: 257, 258
+  offset: 0, 0
+  index: -1
+b6
+  rotate: false
+  xy: 262, 262
+  size: 258, 258
+  orig: 258, 258
+  offset: 0, 0
+  index: -1
+b7
+  rotate: false
+  xy: 262, 2
+  size: 257, 258
+  orig: 257, 258
+  offset: 0, 0
+  index: -1
+b8
+  rotate: false
+  xy: 522, 262
+  size: 257, 258
+  orig: 257, 258
+  offset: 0, 0
+  index: -1
+b9
+  rotate: false
+  xy: 521, 2
+  size: 256, 258
+  orig: 256, 258
+  offset: 0, 0
+  index: -1

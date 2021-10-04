@@ -1,0 +1,167 @@
+
+lt_cs01_yun01.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l_d
+  rotate: false
+  xy: 458, 20
+  size: 34, 33
+  orig: 34, 33
+  offset: 0, 0
+  index: -1
+arm_l_u
+  rotate: false
+  xy: 287, 9
+  size: 15, 23
+  orig: 15, 23
+  offset: 0, 0
+  index: -1
+arm_r
+  rotate: false
+  xy: 459, 55
+  size: 37, 31
+  orig: 37, 31
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 400, 71
+  size: 57, 55
+  orig: 57, 55
+  offset: 0, 0
+  index: -1
+brow
+  rotate: false
+  xy: 287, 2
+  size: 7, 5
+  orig: 7, 5
+  offset: 0, 0
+  index: -1
+dian1
+  rotate: false
+  xy: 428, 41
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+dian2
+  rotate: true
+  xy: 393, 29
+  size: 37, 33
+  orig: 37, 33
+  offset: 0, 0
+  index: -1
+dian3
+  rotate: false
+  xy: 459, 88
+  size: 39, 38
+  orig: 39, 38
+  offset: 0, 0
+  index: -1
+ear
+  rotate: false
+  xy: 494, 37
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 320, 16
+  size: 13, 13
+  orig: 13, 13
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 325, 68
+  size: 73, 58
+  orig: 73, 58
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: true
+  xy: 500, 111
+  size: 15, 10
+  orig: 15, 10
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 428, 30
+  size: 12, 9
+  orig: 12, 9
+  offset: 0, 0
+  index: -1
+hat1
+  rotate: false
+  xy: 246, 70
+  size: 77, 56
+  orig: 77, 56
+  offset: 0, 0
+  index: -1
+hat2
+  rotate: false
+  xy: 246, 34
+  size: 58, 34
+  orig: 58, 34
+  offset: 0, 0
+  index: -1
+hat3
+  rotate: false
+  xy: 350, 31
+  size: 41, 35
+  orig: 41, 35
+  offset: 0, 0
+  index: -1
+hz1
+  rotate: false
+  xy: 246, 6
+  size: 39, 26
+  orig: 39, 26
+  offset: 0, 0
+  index: -1
+hz2
+  rotate: false
+  xy: 304, 14
+  size: 14, 15
+  orig: 14, 15
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 494, 29
+  size: 16, 6
+  orig: 16, 6
+  offset: 0, 0
+  index: -1
+quan1
+  rotate: false
+  xy: 2, 6
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+quan2
+  rotate: false
+  xy: 124, 14
+  size: 120, 112
+  orig: 120, 112
+  offset: 0, 0
+  index: -1
+star
+  rotate: true
+  xy: 500, 100
+  size: 9, 10
+  orig: 9, 10
+  offset: 0, 0
+  index: -1
+yun
+  rotate: false
+  xy: 306, 31
+  size: 42, 35
+  orig: 42, 35
+  offset: 0, 0
+  index: -1

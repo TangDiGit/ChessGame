@@ -1,0 +1,41 @@
+
+paoche.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+che1
+  rotate: false
+  xy: 2, 169
+  size: 529, 333
+  orig: 533, 341
+  offset: 0, 0
+  index: -1
+che2
+  rotate: false
+  xy: 763, 188
+  size: 141, 314
+  orig: 141, 314
+  offset: 0, 0
+  index: -1
+dian
+  rotate: false
+  xy: 763, 130
+  size: 56, 56
+  orig: 79, 79
+  offset: 11, 12
+  index: -1
+tx1
+  rotate: true
+  xy: 533, 2
+  size: 500, 228
+  orig: 500, 228
+  offset: 0, 0
+  index: -1
+tx2
+  rotate: false
+  xy: 2, 39
+  size: 487, 128
+  orig: 500, 141
+  offset: 0, 4
+  index: -1

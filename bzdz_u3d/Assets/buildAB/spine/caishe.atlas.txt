@@ -1,0 +1,76 @@
+
+caishe.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+daizi
+  rotate: false
+  xy: 539, 125
+  size: 74, 123
+  orig: 74, 123
+  offset: 0, 0
+  index: -1
+duilian
+  rotate: true
+  xy: 610, 307
+  size: 203, 264
+  orig: 203, 264
+  offset: 0, 0
+  index: -1
+er
+  rotate: false
+  xy: 114, 50
+  size: 164, 90
+  orig: 164, 90
+  offset: 0, 0
+  index: -1
+hongbao
+  rotate: false
+  xy: 311, 75
+  size: 226, 173
+  orig: 228, 175
+  offset: 1, 1
+  index: -1
+huzi
+  rotate: true
+  xy: 610, 253
+  size: 52, 90
+  orig: 52, 90
+  offset: 0, 0
+  index: -1
+huzi2
+  rotate: false
+  xy: 615, 154
+  size: 62, 97
+  orig: 62, 97
+  offset: 0, 0
+  index: -1
+shenti
+  rotate: false
+  xy: 311, 250
+  size: 297, 260
+  orig: 297, 260
+  offset: 0, 0
+  index: -1
+tou
+  rotate: false
+  xy: 2, 142
+  size: 307, 368
+  orig: 309, 369
+  offset: 1, 0
+  index: -1
+xiuzi
+  rotate: false
+  xy: 2, 2
+  size: 110, 138
+  orig: 110, 138
+  offset: 0, 0
+  index: -1
+yuanbao
+  rotate: true
+  xy: 876, 349
+  size: 161, 141
+  orig: 163, 143
+  offset: 1, 1
+  index: -1

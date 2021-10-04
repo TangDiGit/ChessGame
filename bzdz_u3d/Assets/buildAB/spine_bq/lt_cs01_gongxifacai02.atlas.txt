@@ -1,0 +1,188 @@
+
+lt_cs01_gongxifacai02.png
+size: 1024,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/cai
+  rotate: false
+  xy: 455, 27
+  size: 48, 35
+  orig: 48, 35
+  offset: 0, 0
+  index: -1
+images/cai2
+  rotate: false
+  xy: 255, 24
+  size: 47, 38
+  orig: 47, 38
+  offset: 0, 0
+  index: -1
+images/cs_0002_hat2
+  rotate: true
+  xy: 107, 2
+  size: 20, 22
+  orig: 20, 22
+  offset: 0, 0
+  index: -1
+images/cs_0003_hat1
+  rotate: false
+  xy: 73, 24
+  size: 72, 38
+  orig: 72, 38
+  offset: 0, 0
+  index: -1
+images/cs_0004_hat3
+  rotate: false
+  xy: 555, 35
+  size: 55, 27
+  orig: 55, 27
+  offset: 0, 0
+  index: -1
+images/cs_0005_hat4
+  rotate: false
+  xy: 304, 25
+  size: 48, 37
+  orig: 48, 37
+  offset: 0, 0
+  index: -1
+images/cs_0006_eye_l
+  rotate: false
+  xy: 336, 5
+  size: 15, 18
+  orig: 15, 18
+  offset: 0, 0
+  index: -1
+images/cs_0007_eye_r
+  rotate: false
+  xy: 444, 7
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+images/cs_0008_hz
+  rotate: false
+  xy: 835, 46
+  size: 14, 16
+  orig: 14, 16
+  offset: 0, 0
+  index: -1
+images/cs_0009_mouth
+  rotate: false
+  xy: 404, 2
+  size: 38, 23
+  orig: 38, 23
+  offset: 0, 0
+  index: -1
+images/cs_0010_face
+  rotate: false
+  xy: 2, 12
+  size: 69, 50
+  orig: 69, 50
+  offset: 0, 0
+  index: -1
+images/cs_0012_ear_r
+  rotate: false
+  xy: 131, 2
+  size: 14, 20
+  orig: 14, 20
+  offset: 0, 0
+  index: -1
+images/cs_0013_arm_l_l
+  rotate: false
+  xy: 773, 36
+  size: 29, 26
+  orig: 29, 26
+  offset: 0, 0
+  index: -1
+images/cs_0014_hand_l
+  rotate: false
+  xy: 462, 12
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+images/cs_0015_arn_l_u
+  rotate: true
+  xy: 304, 2
+  size: 21, 30
+  orig: 21, 30
+  offset: 0, 0
+  index: -1
+images/cs_0016_arm_r_l
+  rotate: false
+  xy: 804, 36
+  size: 29, 26
+  orig: 29, 26
+  offset: 0, 0
+  index: -1
+images/cs_0017_arm_r_u
+  rotate: true
+  xy: 73, 2
+  size: 20, 32
+  orig: 20, 32
+  offset: 0, 0
+  index: -1
+images/cs_0018_hand_r
+  rotate: false
+  xy: 851, 49
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+images/cs_0019_body
+  rotate: false
+  xy: 147, 16
+  size: 55, 46
+  orig: 55, 46
+  offset: 0, 0
+  index: -1
+images/fa
+  rotate: false
+  xy: 354, 26
+  size: 48, 36
+  orig: 48, 36
+  offset: 0, 0
+  index: -1
+images/gan
+  rotate: false
+  xy: 612, 45
+  size: 60, 17
+  orig: 60, 17
+  offset: 0, 0
+  index: -1
+images/gong
+  rotate: false
+  xy: 724, 23
+  size: 47, 39
+  orig: 47, 39
+  offset: 0, 0
+  index: -1
+images/gun1
+  rotate: false
+  xy: 404, 27
+  size: 49, 35
+  orig: 49, 35
+  offset: 0, 0
+  index: -1
+images/gun2
+  rotate: false
+  xy: 204, 24
+  size: 49, 38
+  orig: 49, 38
+  offset: 0, 0
+  index: -1
+images/xi
+  rotate: false
+  xy: 674, 29
+  size: 48, 33
+  orig: 48, 33
+  offset: 0, 0
+  index: -1
+images/yuan
+  rotate: false
+  xy: 505, 27
+  size: 48, 35
+  orig: 48, 35
+  offset: 0, 0
+  index: -1

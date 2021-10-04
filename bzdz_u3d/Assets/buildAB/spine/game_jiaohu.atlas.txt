@@ -1,0 +1,160 @@
+
+game_jiaohu.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Effect_heart_00
+  rotate: false
+  xy: 1065, 116
+  size: 152, 134
+  orig: 152, 134
+  offset: 0, 0
+  index: -1
+Effect_jz_00
+  rotate: false
+  xy: 1830, 178
+  size: 75, 72
+  orig: 75, 72
+  offset: 0, 0
+  index: -1
+Effect_jz_01
+  rotate: false
+  xy: 1650, 147
+  size: 103, 103
+  orig: 103, 103
+  offset: 0, 0
+  index: -1
+Effect_jz_02
+  rotate: false
+  xy: 1542, 144
+  size: 106, 106
+  orig: 106, 106
+  offset: 0, 0
+  index: -1
+Effect_smoke_00
+  rotate: false
+  xy: 1219, 139
+  size: 106, 111
+  orig: 106, 111
+  offset: 0, 0
+  index: -1
+Effect_smoke_01
+  rotate: false
+  xy: 1327, 139
+  size: 106, 111
+  orig: 106, 111
+  offset: 0, 0
+  index: -1
+Effect_smoke_02
+  rotate: false
+  xy: 1435, 139
+  size: 105, 111
+  orig: 105, 111
+  offset: 0, 0
+  index: -1
+ddz_baozha_effect_03
+  rotate: false
+  xy: 894, 102
+  size: 169, 148
+  orig: 169, 148
+  offset: 0, 0
+  index: -1
+ddz_baozha_effect_05
+  rotate: false
+  xy: 670, 104
+  size: 222, 146
+  orig: 222, 146
+  offset: 0, 0
+  index: -1
+ddz_baozha_effect_07
+  rotate: false
+  xy: 2, 49
+  size: 242, 201
+  orig: 242, 201
+  offset: 0, 0
+  index: -1
+ddz_baozha_effect_09
+  rotate: false
+  xy: 246, 39
+  size: 231, 211
+  orig: 231, 211
+  offset: 0, 0
+  index: -1
+ddz_baozha_effect_11
+  rotate: false
+  xy: 479, 67
+  size: 189, 183
+  orig: 189, 183
+  offset: 0, 0
+  index: -1
+jhicon_bz
+  rotate: false
+  xy: 1755, 174
+  size: 73, 76
+  orig: 73, 76
+  offset: 0, 0
+  index: -1
+jhicon_bz02
+  rotate: false
+  xy: 955, 57
+  size: 52, 43
+  orig: 52, 43
+  offset: 0, 0
+  index: -1
+jhicon_bz03
+  rotate: false
+  xy: 892, 41
+  size: 61, 59
+  orig: 61, 59
+  offset: 0, 0
+  index: -1
+jhicon_jd
+  rotate: true
+  xy: 820, 40
+  size: 62, 70
+  orig: 62, 70
+  offset: 0, 0
+  index: -1
+jhicon_jd02
+  rotate: true
+  xy: 1991, 188
+  size: 62, 48
+  orig: 62, 48
+  offset: 0, 0
+  index: -1
+jhicon_jd03
+  rotate: false
+  xy: 70, 14
+  size: 62, 33
+  orig: 62, 33
+  offset: 0, 0
+  index: -1
+jhicon_jd04
+  rotate: true
+  xy: 1907, 188
+  size: 62, 82
+  orig: 62, 82
+  offset: 0, 0
+  index: -1
+jhicon_mgh
+  rotate: true
+  xy: 748, 34
+  size: 68, 70
+  orig: 68, 70
+  offset: 0, 0
+  index: -1
+jhicon_zj
+  rotate: true
+  xy: 670, 36
+  size: 66, 76
+  orig: 66, 76
+  offset: 0, 0
+  index: -1
+jhicon_zj02
+  rotate: false
+  xy: 2, 2
+  size: 66, 45
+  orig: 66, 45
+  offset: 0, 0
+  index: -1

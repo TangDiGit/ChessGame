@@ -1,0 +1,69 @@
+
+tongchi.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+jinbi (1)
+  rotate: true
+  xy: 2, 2
+  size: 82, 90
+  orig: 82, 90
+  offset: 0, 0
+  index: -1
+jinbi (2)
+  rotate: false
+  xy: 881, 164
+  size: 82, 90
+  orig: 82, 90
+  offset: 0, 0
+  index: -1
+jinbi (3)
+  rotate: true
+  xy: 94, 2
+  size: 82, 90
+  orig: 82, 90
+  offset: 0, 0
+  index: -1
+jinbi (4)
+  rotate: true
+  xy: 186, 2
+  size: 82, 90
+  orig: 82, 90
+  offset: 0, 0
+  index: -1
+jinbi (5)
+  rotate: true
+  xy: 278, 2
+  size: 82, 90
+  orig: 82, 90
+  offset: 0, 0
+  index: -1
+jinbi (6)
+  rotate: true
+  xy: 370, 2
+  size: 82, 90
+  orig: 82, 90
+  offset: 0, 0
+  index: -1
+maozi
+  rotate: false
+  xy: 651, 86
+  size: 228, 168
+  orig: 228, 168
+  offset: 0, 0
+  index: -1
+ui_1_3_1
+  rotate: false
+  xy: 2, 87
+  size: 335, 167
+  orig: 335, 167
+  offset: 0, 0
+  index: -1
+ui_1_4
+  rotate: false
+  xy: 339, 119
+  size: 310, 135
+  orig: 310, 135
+  offset: 0, 0
+  index: -1

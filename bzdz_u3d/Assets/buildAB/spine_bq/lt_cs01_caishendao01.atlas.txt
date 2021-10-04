@@ -1,0 +1,160 @@
+
+lt_cs01_caishendao01.png
+size: 512,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/cai
+  rotate: false
+  xy: 204, 25
+  size: 49, 37
+  orig: 49, 37
+  offset: 0, 0
+  index: -1
+images/cs_0002_hat2
+  rotate: true
+  xy: 107, 2
+  size: 20, 22
+  orig: 20, 22
+  offset: 0, 0
+  index: -1
+images/cs_0003_hat1
+  rotate: false
+  xy: 73, 24
+  size: 72, 38
+  orig: 72, 38
+  offset: 0, 0
+  index: -1
+images/cs_0004_hat3
+  rotate: false
+  xy: 305, 35
+  size: 55, 27
+  orig: 55, 27
+  offset: 0, 0
+  index: -1
+images/cs_0005_hat4
+  rotate: false
+  xy: 255, 25
+  size: 48, 37
+  orig: 48, 37
+  offset: 0, 0
+  index: -1
+images/cs_0006_eye_l
+  rotate: false
+  xy: 336, 15
+  size: 15, 18
+  orig: 15, 18
+  offset: 0, 0
+  index: -1
+images/cs_0007_eye_r
+  rotate: false
+  xy: 491, 44
+  size: 16, 18
+  orig: 16, 18
+  offset: 0, 0
+  index: -1
+images/cs_0008_hz
+  rotate: false
+  xy: 268, 7
+  size: 14, 16
+  orig: 14, 16
+  offset: 0, 0
+  index: -1
+images/cs_0009_mouth
+  rotate: false
+  xy: 451, 39
+  size: 38, 23
+  orig: 38, 23
+  offset: 0, 0
+  index: -1
+images/cs_0010_face
+  rotate: false
+  xy: 2, 12
+  size: 69, 50
+  orig: 69, 50
+  offset: 0, 0
+  index: -1
+images/cs_0012_ear_r
+  rotate: false
+  xy: 131, 2
+  size: 14, 20
+  orig: 14, 20
+  offset: 0, 0
+  index: -1
+images/cs_0013_arm_l_l
+  rotate: false
+  xy: 305, 7
+  size: 29, 26
+  orig: 29, 26
+  offset: 0, 0
+  index: -1
+images/cs_0014_hand_l
+  rotate: false
+  xy: 284, 10
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+images/cs_0015_arn_l_u
+  rotate: true
+  xy: 204, 2
+  size: 21, 30
+  orig: 21, 30
+  offset: 0, 0
+  index: -1
+images/cs_0016_arm_r_l
+  rotate: true
+  xy: 443, 3
+  size: 29, 26
+  orig: 29, 26
+  offset: 0, 0
+  index: -1
+images/cs_0017_arm_r_u
+  rotate: true
+  xy: 73, 2
+  size: 20, 32
+  orig: 20, 32
+  offset: 0, 0
+  index: -1
+images/cs_0018_hand_r
+  rotate: false
+  xy: 471, 24
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+images/cs_0019_body
+  rotate: false
+  xy: 147, 16
+  size: 55, 46
+  orig: 55, 46
+  offset: 0, 0
+  index: -1
+images/cs_0020_yb
+  rotate: false
+  xy: 236, 2
+  size: 30, 21
+  orig: 30, 21
+  offset: 0, 0
+  index: -1
+images/dao
+  rotate: false
+  xy: 362, 23
+  size: 45, 39
+  orig: 45, 39
+  offset: 0, 0
+  index: -1
+images/gth
+  rotate: true
+  xy: 409, 3
+  size: 29, 32
+  orig: 29, 32
+  offset: 0, 0
+  index: -1
+images/shen
+  rotate: false
+  xy: 409, 34
+  size: 40, 28
+  orig: 40, 28
+  offset: 0, 0
+  index: -1

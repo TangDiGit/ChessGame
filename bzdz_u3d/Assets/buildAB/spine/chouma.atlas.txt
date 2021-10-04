@@ -1,0 +1,41 @@
+
+chouma.png
+size: 256,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bi_hong
+  rotate: false
+  xy: 2, 2
+  size: 45, 35
+  orig: 45, 35
+  offset: 0, 0
+  index: -1
+bi_huang
+  rotate: false
+  xy: 49, 2
+  size: 45, 35
+  orig: 45, 35
+  offset: 0, 0
+  index: -1
+bi_lan
+  rotate: false
+  xy: 96, 2
+  size: 45, 35
+  orig: 45, 35
+  offset: 0, 0
+  index: -1
+bi_lv
+  rotate: false
+  xy: 143, 2
+  size: 45, 35
+  orig: 45, 35
+  offset: 0, 0
+  index: -1
+bi_zi
+  rotate: false
+  xy: 190, 2
+  size: 45, 35
+  orig: 45, 35
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,188 @@
+
+lt_cs01_youqianrenxing01.png
+size: 512,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l
+  rotate: true
+  xy: 438, 36
+  size: 26, 41
+  orig: 26, 41
+  offset: 0, 0
+  index: -1
+arm_r
+  rotate: false
+  xy: 363, 26
+  size: 36, 36
+  orig: 36, 36
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 74, 14
+  size: 65, 48
+  orig: 65, 48
+  offset: 0, 0
+  index: -1
+browl
+  rotate: false
+  xy: 95, 6
+  size: 9, 6
+  orig: 9, 6
+  offset: 0, 0
+  index: -1
+browr
+  rotate: true
+  xy: 206, 12
+  size: 8, 6
+  orig: 8, 6
+  offset: 0, 0
+  index: -1
+ear
+  rotate: true
+  xy: 356, 7
+  size: 17, 24
+  orig: 17, 24
+  offset: 0, 0
+  index: -1
+eye_l
+  rotate: true
+  xy: 179, 3
+  size: 17, 25
+  orig: 17, 25
+  offset: 0, 0
+  index: -1
+eye_r
+  rotate: true
+  xy: 312, 2
+  size: 22, 24
+  orig: 22, 24
+  offset: 0, 0
+  index: -1
+eyeball
+  rotate: false
+  xy: 481, 41
+  size: 5, 5
+  orig: 5, 5
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 2, 7
+  size: 70, 55
+  orig: 70, 55
+  offset: 0, 0
+  index: -1
+gth
+  rotate: false
+  xy: 266, 2
+  size: 26, 28
+  orig: 26, 28
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: true
+  xy: 294, 2
+  size: 28, 16
+  orig: 28, 16
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: true
+  xy: 215, 2
+  size: 21, 31
+  orig: 21, 31
+  offset: 0, 0
+  index: -1
+hat1
+  rotate: false
+  xy: 141, 22
+  size: 72, 40
+  orig: 72, 40
+  offset: 0, 0
+  index: -1
+hat2
+  rotate: true
+  xy: 141, 2
+  size: 18, 21
+  orig: 18, 21
+  offset: 0, 0
+  index: -1
+hat3
+  rotate: false
+  xy: 266, 32
+  size: 55, 30
+  orig: 55, 30
+  offset: 0, 0
+  index: -1
+hat4
+  rotate: false
+  xy: 215, 25
+  size: 49, 37
+  orig: 49, 37
+  offset: 0, 0
+  index: -1
+hz1
+  rotate: false
+  xy: 248, 8
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+hz2
+  rotate: true
+  xy: 338, 2
+  size: 22, 16
+  orig: 22, 16
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 74, 2
+  size: 19, 10
+  orig: 19, 10
+  offset: 0, 0
+  index: -1
+mouth2
+  rotate: false
+  xy: 481, 48
+  size: 29, 14
+  orig: 29, 14
+  offset: 0, 0
+  index: -1
+qian
+  rotate: false
+  xy: 476, 3
+  size: 34, 31
+  orig: 34, 31
+  offset: 0, 0
+  index: -1
+ren
+  rotate: false
+  xy: 438, 4
+  size: 36, 30
+  orig: 36, 30
+  offset: 0, 0
+  index: -1
+xing
+  rotate: false
+  xy: 323, 27
+  size: 38, 35
+  orig: 38, 35
+  offset: 0, 0
+  index: -1
+yb
+  rotate: true
+  xy: 164, 2
+  size: 18, 13
+  orig: 18, 13
+  offset: 0, 0
+  index: -1
+you
+  rotate: false
+  xy: 401, 29
+  size: 35, 33
+  orig: 35, 33
+  offset: 0, 0
+  index: -1

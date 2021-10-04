@@ -1,0 +1,41 @@
+
+package proto.cmd_texas_net;
+
+
+// 游戏子协议
+enum CMD_GAME_SUB
+{
+	CMD_GAME_ENTER_GAME_REQ                  = 0x1080;                      // 进入游戏请求 (上行) cmd_texas_game.proto->CEnterGameReq
+	CMD_GAME_ENTER_GAME_FAILD_RSP            = 0x1081;                      // 进入房间失败应答 (下行) cmd_texas_game.proto->SEnterGameFaildResp
+	CMD_GAME_UPDATE_GAME_SCENE               = 0x1082;                      // 场景下发 (下行) cmd_texas100_game.proto->SUpdateGameScene
+	CMD_GAME_LEAVE_REQ                       = 0x1083;                      // 离开游戏请求 (上行) cmd_texas_game.proto->CLeaveGameReq
+	CMD_GAME_LEAVE_RSP                       = 0x1084;                      // 离开游戏应答 (下行) cmd_texas_game.proto->SLeaveGameResp
+	CMD_GAME_SITDOWN_REQ                     = 0x1085;                      // 玩家坐下请求 (上行) cmd_texas_game.proto->CSitDownReq
+	CMD_GAME_SITDOWN_RSP                     = 0x1086;                      // 玩家坐下应答 (下行) cmd_texas_game.proto->SSitDownResp
+	CMD_GAME_STANDUP_REQ                     = 0x1087;                      // 玩家站起请求 (上行) cmd_texas_game.proto->CStandUpReq
+	CMD_GAME_STANDUP_RSP                     = 0x1088;                      // 玩家站起应答 (下行) cmd_texas_game.proto->SStandUpResp
+	CMD_GAME_PLAYER_STATUS_CHG               = 0x1089;                      // 座位玩家在线状态 (下行) cmd_texas_game.proto->SUpdatePlayerOnlineState
+	CMD_GAME_GAME_STATUS_CHG                 = 0x1090;                      // 游戏状态改变通知 (下行) cmd_texas_game.proto->SGameStatusChg
+	CMD_GAME_BET_REQ                         = 0x1091;                      // 投注请求 (上行) cmd_texas_game.proto->CBetReq
+	CMD_GAME_BET_RESP                        = 0x1092;                      // 投注应答 (下行) cmd_texas_game.proto->SBetResp
+	CMD_GAME_UPDATE_BET_INFO                 = 0x1093;                      // 更新投注信息广播 (下行) cmd_texas_game.proto->SUpdateBetInfo
+	CMD_GAME_APPLY_BANKER_REQ                = 0x1094;                      // 上庄申请请求 (上行) cmd_texas_game.proto->CApplyBankerReq
+	CMD_GAME_APPLY_BANKER_RESP               = 0x1095;                      // 上庄申请应答 (下行) cmd_texas_game.proto->SApplyBankerResp
+	CMD_GAME_GET_APPLY_BANKER_LIST_REQ       = 0x1096;                      // 获取上庄申请列表请求 (上行) cmd_texas_game.proto->CGetApplyBankerListReq
+	CMD_GAME_GET_APPLY_BANKER_LIST_RESP      = 0x1097;                      // 获取上庄申请列表应答 (下行) cmd_texas_game.proto->SGetApplyBankerListResp
+	CMD_GAME_EXIT_BANKER_REQ                 = 0x1098;                      // 用户下庄请求 (上行) cmd_texas_game.proto->CExitBankerReq
+	CMD_GAME_EXIT_BANKER_RESP                = 0x1099;                      // 用户下庄应答 (下行) cmd_texas_game.proto->SExitBankerResp
+	CMD_GAME_BANKER_CHG_RESP                 = 0x1100;                     // 庄家变更通知 (下行) cmd_texas_game.proto->SBankerChangeNofity
+	CMD_GAME_BET_SETTLE                      = 0x1101;                     // 投注结算广播 (下行) cmd_texas_game.proto->SBetSettle
+	CMD_GAME_GET_USER_LIST_REQ               = 0x1102;                     // 获取用户列表请求 (上行) cmd_texas_game.proto->CGetUserListReq
+	CMD_GAME_GET_USER_LIST_RSP               = 0x1103;                     // 获取用户列表应答 (下行) cmd_texas_game.proto->SGetUserListResp
+	CMD_GAME_USER_OFFLINE                    = 0x1104;                     // 玩家离线 (上行) 客户端不需要处理  cmd_texas_game.proto->CUserOfflineReq
+	CMD_GAME_USER_RECONN                     = 0x1105;                     // 玩家离线 (上行) 客户端不需要处理 cmd_texas_game.proto->CUserReonnReq
+	CMD_GAME_BALANCE_TREND_REQ               = 0x1106;                     // 输赢走势请求 (上行) 空
+	CMD_GAME_BALANCE_TREND_RSP               = 0x1107;                     // 输赢走势应答 (下行) cmd_texas_game.proto->SBalanceResp
+	CMD_GAME_ROUND_LOOKBACK_REQ              = 0x1108;                     // 牌局回顾请求 (上行) 空
+	CMD_GAME_ROUND_LOOKBACK_RSP              = 0x1109;                     // 牌局回顾应答 (下行) cmd_texas_game.proto->SRoundLookbackResp
+}
+
+
+

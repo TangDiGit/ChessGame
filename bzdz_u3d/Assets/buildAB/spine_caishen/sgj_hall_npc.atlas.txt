@@ -1,0 +1,286 @@
+
+sgj_hall_npc.png
+size: 779,779
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+npc_50/biyan1
+  rotate: true
+  xy: 183, 28
+  size: 36, 21
+  orig: 36, 21
+  offset: 0, 0
+  index: -1
+npc_50/biyan2
+  rotate: false
+  xy: 560, 274
+  size: 23, 20
+  orig: 23, 20
+  offset: 0, 0
+  index: -1
+npc_50/bozi
+  rotate: false
+  xy: 686, 76
+  size: 42, 49
+  orig: 42, 49
+  offset: 0, 0
+  index: -1
+npc_50/er1
+  rotate: true
+  xy: 634, 74
+  size: 43, 50
+  orig: 43, 50
+  offset: 0, 0
+  index: -1
+npc_50/erhuan1
+  rotate: false
+  xy: 607, 2
+  size: 29, 28
+  orig: 29, 28
+  offset: 0, 0
+  index: -1
+npc_50/erhuan2
+  rotate: false
+  xy: 396, 433
+  size: 30, 29
+  orig: 30, 29
+  offset: 0, 0
+  index: -1
+npc_50/fa1
+  rotate: false
+  xy: 573, 32
+  size: 64, 35
+  orig: 64, 35
+  offset: 0, 0
+  index: -1
+npc_50/fa10
+  rotate: false
+  xy: 149, 88
+  size: 143, 134
+  orig: 143, 134
+  offset: 0, 0
+  index: -1
+npc_50/fa11
+  rotate: false
+  xy: 396, 296
+  size: 195, 124
+  orig: 195, 124
+  offset: 0, 0
+  index: -1
+npc_50/fa12
+  rotate: false
+  xy: 170, 523
+  size: 259, 254
+  orig: 259, 254
+  offset: 0, 0
+  index: -1
+npc_50/fa13
+  rotate: false
+  xy: 170, 224
+  size: 200, 76
+  orig: 200, 76
+  offset: 0, 0
+  index: -1
+npc_50/fa1_1
+  rotate: true
+  xy: 719, 577
+  size: 50, 56
+  orig: 50, 56
+  offset: 0, 0
+  index: -1
+npc_50/fa2
+  rotate: false
+  xy: 751, 463
+  size: 22, 50
+  orig: 22, 50
+  offset: 0, 0
+  index: -1
+npc_50/fa2_1
+  rotate: false
+  xy: 211, 70
+  size: 18, 16
+  orig: 18, 16
+  offset: 0, 0
+  index: -1
+npc_50/fa2_2
+  rotate: false
+  xy: 147, 21
+  size: 34, 43
+  orig: 34, 43
+  offset: 0, 0
+  index: -1
+npc_50/fa3
+  rotate: false
+  xy: 396, 464
+  size: 33, 57
+  orig: 33, 57
+  offset: 0, 0
+  index: -1
+npc_50/fa4
+  rotate: true
+  xy: 751, 515
+  size: 60, 25
+  orig: 60, 25
+  offset: 0, 0
+  index: -1
+npc_50/fa5
+  rotate: true
+  xy: 149, 240
+  size: 27, 12
+  orig: 27, 12
+  offset: 0, 0
+  index: -1
+npc_50/fa6
+  rotate: false
+  xy: 502, 108
+  size: 55, 99
+  orig: 55, 99
+  offset: 0, 0
+  index: -1
+npc_50/fa7
+  rotate: true
+  xy: 560, 207
+  size: 64, 151
+  orig: 64, 151
+  offset: 0, 0
+  index: -1
+npc_50/fa8
+  rotate: false
+  xy: 520, 31
+  size: 51, 75
+  orig: 51, 75
+  offset: 0, 0
+  index: -1
+npc_50/fa9
+  rotate: false
+  xy: 2, 8
+  size: 143, 56
+  orig: 143, 56
+  offset: 0, 0
+  index: -1
+npc_50/huan1
+  rotate: false
+  xy: 573, 2
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+npc_50/huan2
+  rotate: false
+  xy: 149, 66
+  size: 60, 20
+  orig: 60, 20
+  offset: 0, 0
+  index: -1
+npc_50/jiao1
+  rotate: false
+  xy: 170, 302
+  size: 224, 219
+  orig: 227, 219
+  offset: 2, 0
+  index: -1
+npc_50/lian
+  rotate: false
+  xy: 365, 5
+  size: 99, 99
+  orig: 99, 99
+  offset: 0, 0
+  index: -1
+npc_50/mao1
+  rotate: true
+  xy: 294, 76
+  size: 146, 69
+  orig: 146, 69
+  offset: 0, 0
+  index: -1
+npc_50/shou1
+  rotate: false
+  xy: 675, 127
+  size: 63, 78
+  orig: 63, 78
+  offset: 0, 0
+  index: -1
+npc_50/shou2
+  rotate: false
+  xy: 431, 422
+  size: 318, 152
+  orig: 318, 152
+  offset: 0, 0
+  index: -1
+npc_50/shoubi1
+  rotate: false
+  xy: 719, 629
+  size: 57, 148
+  orig: 57, 148
+  offset: 0, 0
+  index: -1
+npc_50/tui1
+  rotate: false
+  xy: 2, 66
+  size: 145, 201
+  orig: 145, 201
+  offset: 0, 0
+  index: -1
+npc_50/tui2
+  rotate: false
+  xy: 2, 269
+  size: 166, 508
+  orig: 166, 508
+  offset: 0, 0
+  index: -1
+npc_50/xiaobi1
+  rotate: true
+  xy: 559, 119
+  size: 86, 114
+  orig: 86, 114
+  offset: 0, 0
+  index: -1
+npc_50/xiong1
+  rotate: false
+  xy: 713, 217
+  size: 64, 54
+  orig: 64, 54
+  offset: 0, 0
+  index: -1
+npc_50/xiong2
+  rotate: false
+  xy: 573, 69
+  size: 59, 48
+  orig: 59, 48
+  offset: 0, 0
+  index: -1
+npc_50/yi1
+  rotate: true
+  xy: 466, 28
+  size: 76, 52
+  orig: 76, 52
+  offset: 0, 0
+  index: -1
+npc_50/yi2
+  rotate: true
+  xy: 593, 273
+  size: 147, 161
+  orig: 147, 161
+  offset: 0, 0
+  index: -1
+npc_50/yi3
+  rotate: true
+  xy: 372, 209
+  size: 85, 186
+  orig: 85, 186
+  offset: 0, 0
+  index: -1
+npc_50/yifu1
+  rotate: false
+  xy: 365, 106
+  size: 135, 101
+  orig: 135, 101
+  offset: 0, 0
+  index: -1
+npc_50/图层_2
+  rotate: true
+  xy: 431, 576
+  size: 201, 286
+  orig: 201, 286
+  offset: 0, 0
+  index: -1

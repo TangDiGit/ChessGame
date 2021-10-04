@@ -1,0 +1,62 @@
+
+hd_xianbing01.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/eye
+  rotate: false
+  xy: 376, 117
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+images/face
+  rotate: false
+  xy: 2, 68
+  size: 118, 155
+  orig: 118, 155
+  offset: 0, 0
+  index: -1
+images/fx00
+  rotate: false
+  xy: 128, 13
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
+images/fx01
+  rotate: false
+  xy: 210, 61
+  size: 34, 32
+  orig: 34, 32
+  offset: 0, 0
+  index: -1
+images/pan1
+  rotate: true
+  xy: 2, 2
+  size: 64, 124
+  orig: 64, 124
+  offset: 0, 0
+  index: -1
+images/pie
+  rotate: false
+  xy: 376, 154
+  size: 120, 69
+  orig: 120, 69
+  offset: 0, 0
+  index: -1
+images/tray01
+  rotate: false
+  xy: 122, 95
+  size: 130, 128
+  orig: 130, 128
+  offset: 0, 0
+  index: -1
+images/tray02
+  rotate: false
+  xy: 254, 103
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,125 @@
+
+lt_cs01_kanxi01.png
+size: 512,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l_d
+  rotate: true
+  xy: 342, 2
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+arm_l_u
+  rotate: false
+  xy: 448, 33
+  size: 24, 29
+  orig: 24, 29
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 221, 10
+  size: 58, 52
+  orig: 58, 52
+  offset: 0, 0
+  index: -1
+brow
+  rotate: true
+  xy: 393, 24
+  size: 8, 4
+  orig: 8, 4
+  offset: 0, 0
+  index: -1
+ear
+  rotate: false
+  xy: 474, 42
+  size: 15, 20
+  orig: 15, 20
+  offset: 0, 0
+  index: -1
+eye
+  rotate: false
+  xy: 2, 2
+  size: 13, 8
+  orig: 13, 8
+  offset: 0, 0
+  index: -1
+eyeball
+  rotate: false
+  xy: 372, 4
+  size: 6, 6
+  orig: 6, 6
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 2, 12
+  size: 70, 50
+  orig: 70, 50
+  offset: 0, 0
+  index: -1
+hand
+  rotate: true
+  xy: 281, 12
+  size: 12, 15
+  orig: 12, 15
+  offset: 0, 0
+  index: -1
+hat1
+  rotate: false
+  xy: 149, 21
+  size: 70, 41
+  orig: 70, 41
+  offset: 0, 0
+  index: -1
+hat2
+  rotate: false
+  xy: 342, 34
+  size: 55, 28
+  orig: 55, 28
+  offset: 0, 0
+  index: -1
+hat3
+  rotate: false
+  xy: 399, 26
+  size: 47, 36
+  orig: 47, 36
+  offset: 0, 0
+  index: -1
+hz1
+  rotate: false
+  xy: 372, 12
+  size: 19, 20
+  orig: 19, 20
+  offset: 0, 0
+  index: -1
+hz2
+  rotate: false
+  xy: 491, 45
+  size: 16, 17
+  orig: 16, 17
+  offset: 0, 0
+  index: -1
+kan
+  rotate: false
+  xy: 74, 22
+  size: 73, 40
+  orig: 73, 40
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 74, 15
+  size: 17, 5
+  orig: 17, 5
+  offset: 0, 0
+  index: -1
+xi
+  rotate: false
+  xy: 281, 26
+  size: 59, 36
+  orig: 59, 36
+  offset: 0, 0
+  index: -1

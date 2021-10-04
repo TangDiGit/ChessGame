@@ -1,0 +1,284 @@
+package com.game.DzNiuZai;
+
+//开始游戏   SUB_S_READY_START
+message ReadyStart
+{
+	required int32 endTime = 1;		//倒计时（秒）
+	required int32 card = 2;			//牌
+}
+//开始游戏   SUB_S_GAME_START
+message GameStart
+{
+	required int32 endTime = 1;		//下注时间（秒）
+	required int64 maxSelfCanInScore = 2;		//自己最多能下多少分
+}
+
+//结算游戏   SUB_S_GAME_END
+message GameEnd
+{
+	required int32 endTime = 1;		//结算时间（秒）
+	required int64 selfWinScore = 2;		//自己输赢多少分
+	required int64 selfRevenue = 3;		//自己税收
+	//其他玩家输赢情况(只有显示在座位上才有)
+	repeated int32 otherWinChairID = 4;
+	repeated int64 otherWinScore = 5;
+	repeated int64 otherSelfScore = 6;	
+
+	repeated int32 areaWin = 7;			//可下注区域输赢(可下注区域的输赢表) 0 :输, 1：赢
+	//牌数据
+	repeated int32 cards = 8;			//牌数据 1 :左边牌(2张), 2：右边牌(2张)， 3：中间牌(5张)
+	repeated int32 maxCards = 9;			//最后组成最大的牌数据 1 :左边牌(5张), 2：右边牌(5张)
+	repeated int32 cardTypes = 10;			//最后牌型 1 :左边牌, 2：右边牌
+	required int64 curselfscore = 11;		//自己身上结算后的分数
+}
+
+//下注   SUB_S_PLACE_JETTON
+message PlaceJetton
+{
+	required int32 userid = 1;		//下注玩家
+	required int32 jettonArea = 2;		//下在什么区域
+	required int64 jettonScore = 3;		//下多少金币
+}
+//下注失败(凡是下注失败都返回这个数据)   SUB_S_PLACE_JETTON_FAIL
+message PlaceJettonFail
+{
+	required int32 userid = 1;		//下注玩家
+	required int32 jettonArea = 2;		//下在什么区域
+	required int64 jettonScore = 3;		//下多少金币
+}
+
+//牌型记录   SUB_S_SEND_RECORD
+message CardsRecord
+{
+	repeated int64 simpleWinRecords = 1;		//游戏桌面走势表(移位操作) 1位为1 :红赢, 2位：蓝赢， 3位：平
+	
+	required int32 sptonghualostcount = 2;		//(同花)连续未出次数
+	required int32 splianpailostcount = 3;		//(连牌)连续未出次数
+	required int32 spduizilostcount = 4;		//(对子)连续未出次数
+	required int32 spthlianpailostcount = 5;		//(同花连牌)连续未出次数
+	required int32 spduialostcount = 6;		//(对A)连续未出次数
+
+	required int32 gaopaiyiduilostcount = 7;		//(高牌一对)连续未出次数
+	required int32 lianduilostcount = 8;		//(两对)连续未出次数
+	required int32 st_sz_thlostcount = 9;		//(三条顺子同花)连续未出次数
+	required int32 hululostcount = 10;		//(葫芦)连续未出次数
+	required int32 four_ths_hjlostcount = 11;		//(同花顺四条皇家)连续未出次数
+
+	repeated int32 sptonghuarecords = 12;		//(同花)前几局输赢
+	repeated int32 splianpairecords = 13;		//(连牌)前几局输赢
+	repeated int32 spduizirecords = 14;		//(对子)前几局输赢
+	repeated int32 spthlianpairecords = 15;		//(同花连牌)前几局输赢
+	repeated int32 spduiarecords = 16;		//(对A)前几局输赢
+	repeated int32 gaopaiyiduirecords = 17;		//(高牌一对)前几局输赢
+	repeated int32 lianduirecords = 18;		//(两对)前几局输赢
+	repeated int32 st_sz_threcords = 19;		//(三条顺子同花)前几局输赢
+	repeated int32 hulurecords = 20;		//(葫芦)前几局输赢
+	repeated int32 four_ths_hjrecords = 21;		//(同花顺四条皇家)前几局输赢
+}
+
+//房间桌子信息(进入房间最先发到客户端)   SUB_S_TABLE_INFO
+message TableInfo
+{
+	required int64 userLimitScore = 1;		//每个玩家最多下多少金币(防止溢出)
+	required int64 clientusersitcondition  = 2;		//坐在显示头像的分数限制
+	repeated int64 chiparr  = 3;		//可以选择的下注分数
+}
+
+//场景准备开始状态    GS_READY 状态
+message SceneReadyStart
+{
+	required int32 endTime = 1;		//剩下多少秒
+	required int32 card = 2;			//牌
+}
+//场景下注状态     GS_PLACE_JETTON 状态
+message ScenePlaceJetton
+{
+	required int32 endTime = 1;		//剩下多少秒
+	required int32 card = 2;			//牌
+	repeated int64 areaInAllScore = 3;  //每个区域下多少金币
+	repeated int64 meAreaInAllScore = 4;  //自己每个区域下多少金币
+	required int64 maxSelfCanInScore = 5;		//自己最多能下多少分
+}
+
+
+//场景结算状态(这个客户端最后显示 等待下一局 不然很多效果不知道怎么显示)     GS_GAME_END 状态
+message SceneGameEnd
+{
+	required int32 endTime = 1;		//剩下多少秒
+}
+
+//坐下玩家信息  SUB_S_USER_SIT_DOWN
+message UserSitInfo
+{
+	required int32 userid = 1;		//
+	required string nickname = 2;		//
+	required string headurl = 3;		//
+	required int64 score = 4;		//
+	required int32 sex = 5;		//
+	required int32 sitindex = 6;		//位置0-7
+}
+
+//坐下玩家列表 SUB_S_INIT_USER_SIT_INFO  SUB_S_UPDATE_USER_SIT_INFO
+message InitUserSitInfo
+{
+	repeated UserSitInfo usersitinfo = 1;  //玩家表
+}
+
+//坐下玩家请求  SUB_S_USER_SIT_UP
+message ClientSitChair
+{
+	required int32 sitindex = 1;		//位置0-7
+}
+
+//玩家列表信息  SUB_S_GET_USER_LIST
+message UserInfo
+{
+	required int32 userid = 1;		//
+	required string nickname = 2;		//
+	required string headurl = 3;		//
+	required int64 score = 4;		//
+	//required int32 vipfaceframeid = 5;		
+}
+
+//坐下玩家列表 SUB_S_GET_USER_LIST
+message GetUserInfoList
+{
+	required int32 startindex = 1;		//开始列表位置
+	required int32 totalusercount = 2;		//全部玩家总数量
+	repeated UserInfo userinfo = 3;  //玩家表
+}
+
+
+//获取手牌和牌型记录 SUB_S_SEND_BIG_AREA_WIN_INFO
+message GetBigAreaWinInfo
+{
+	required int32 index = 1;		// 0:手牌 1:牌型
+	required int64 totalscore = 2;		//当前 金额
+	repeated int32 lastcards = 3;		//
+	required int64 lasttime = 4;		//
+	repeated UserInfo userinfo = 5;  	//玩家表(这里用玩家表，score 就是中奖分数)
+}
+
+
+//取金刚记录 
+message JinGangOneRecordInfo
+{
+	repeated int32 lastcards = 1;		//
+	required int64 totalscore = 2;		//当前 
+	required int64 lasttime = 3;		//
+	required int32 roundcount = 4;		//多少局未开
+}
+
+//获取金刚记录 
+message JinGangRecordsInfo
+{
+	repeated JinGangOneRecordInfo records = 1;  	//
+}
+
+//牌型记录界面 SUB_S_HISTORY_RECORDS
+message GetHistoryRecord
+{
+	repeated int32 winRecords = 1;			//走势输赢 1位 :红赢, 2位：蓝赢， 3位：平
+	repeated int32 winCardTypes = 2;		//赢牌牌型 
+
+	required int32 hongWinTimes = 3;		//今日红赢次数
+	required int32 lanWinTimes = 4;		//今日蓝赢次数
+	required int32 pingWinTimes = 5;		//今日平赢次数
+	required int32 spTongHuaLian_WinTimes = 6;		//今日同花连次数
+	required int32 spDuiA_WinTimes = 7;		//今日对A次数
+	required int32 huLu_WinTimes = 8;		//今日葫芦次数
+	required int32 four_Ths_hj_WinTimes = 9;		//今日金刚同花顺皇家次数
+}
+
+//追号一局记录 
+message ZhuiHaoOneRoundInfo
+{
+	required int64 endtime = 1;		//结算时间（秒）
+	required int32 winscore = 2;		//自己输赢多少分
+
+	repeated int32 cards = 3;			//牌数据 1 :左边牌(2张), 2：右边牌(2张)， 3：中间牌(5张)
+}
+
+//追号记录
+message ZhuiHaoInfo
+{
+	required int64 createtime = 1;		//创建时间
+	required int32 areatype = 2;		//下哪个区域
+	required int32 totalcount = 3;		//共多少局
+	required int32 curcount = 4;		//进行多少局
+	required int32 everyroundscore = 5;		//每局下注多少
+	required int64 totalwinscore = 6;		//总共赢
+	required int32 bplaying = 7;		//是否正在打 0 打完 1.正在打
+	repeated ZhuiHaoOneRoundInfo oneroundinfo  = 8;		//每局记录
+}
+
+
+
+//追号获取追号界面信息
+message GetInitZhuiHaoInfo
+{
+	repeated int64 chiparr  = 1;		//可以选择的下注分数
+	repeated ZhuiHaoInfo zhuihaolist = 2;		//追号列表 
+}
+
+//追号结果
+message ChangeZhuiHaoResult
+{
+	required int64 curselfscore = 1;		//自己身上结算后的分数
+}
+
+//获取记录
+message GetZhuiHaoHistory
+{
+	repeated ZhuiHaoOneRoundInfo oneroundinfo  = 1;		//每局记录
+}
+/////////////////////////////////客户端请求////////////////////////////
+///下注   SUB_C_PLACE_JETTON
+message C_PlaceJetton
+{
+	required int32 area = 1;		//下注区域
+	required int64 socre = 2;		//下多少金币
+}
+
+//获取玩家列表
+message C_GetUserList
+{
+	required int32 startindex = 1;		//开始列表位置
+	required int32 maxCount = 2;		//申请多少个(最多200)
+}
+
+//获取手牌和牌型记录 SUB_C_BIG_AREA_WIN_INFO
+message C_GetBigAreaWinInfo
+{
+	required int32 index = 1;		//奖池ID  0:手牌记录 1:牌型记录
+}
+
+//创建追号
+message C_CreateZhuiHao
+{
+	required int32 areatype = 1;		//下哪个区域
+	required int32 totalcount = 2;		//共多少局
+	required int32 everyroundscore = 3;		//每局下注多少
+	required int32 bwincancel = 4;		//是否打完取消
+}
+
+
+//取消追号
+message C_CancelZhuiHao
+{
+	required int32 areatype = 1;		//下哪个区域
+}
+
+//追加追号
+message C_AddZhuiHao
+{
+	required int32 areatype = 1;		//下哪个区域
+	required int32 addcount = 2;		//增加多少局
+	required int32 addroundscore = 3;		//每局增加多少分
+}
+
+//获取记录
+message C_GetZhuiHaoHistory
+{
+	required int64 id = 1;		//
+}

@@ -1,0 +1,27 @@
+
+hd_jiguanqiang01_end.png
+size: 128,32
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fx1
+  rotate: false
+  xy: 33, 6
+  size: 25, 24
+  orig: 25, 24
+  offset: 0, 0
+  index: -1
+fx2
+  rotate: false
+  xy: 2, 2
+  size: 29, 28
+  orig: 29, 28
+  offset: 0, 0
+  index: -1
+fx3
+  rotate: false
+  xy: 60, 21
+  size: 9, 9
+  orig: 9, 9
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,327 @@
+
+package proto.cmd_texas100_game;
+
+// 投注信息
+message BetInfo
+{
+    required int32 area_id = 1;                                       // 投注区域ID （0~3） 0:方块 1:红心 2:梅花 3:黑桃
+    optional int64 bet_money = 2;                                     // 分区投注的金额, 单位:万分之一元
+	optional int32 tax = 3;                                           // 扣税
+}
+
+// 进入游戏请求
+message CEnterGameReq
+{
+	required int32 uid = 1;										      // 用户ID 
+}
+
+// 进入房间失败应答
+message SEnterGameResp
+{ 
+	required int32 code = 1;										  // 应答结果 0.成功 1.系统错误  2.已超过房间上限 
+}
+
+// 离开桌子请求
+message CLeaveGameReq
+{
+	required int32 uid = 1;										      // 要离开的用户ID
+}
+
+// 离开桌子应答
+message SLeaveGameResp
+{
+	required int32 code = 1;										  // 返回结果 0.成功 1.系统错误 2.用户投注中 3.用户是庄家
+}
+
+// 玩家坐下请求
+message CSitDownReq
+{
+	required int32 uid = 1;										      // 用户ID
+    optional int32 seat_id = 2;                                       // 座位ID, 0~5
+}
+
+// 玩家坐下应答
+message SSitDownResp
+{
+	required int32 code = 1;										  // 返回结果 0.成功 1.系统错误 2.当前游戏状态不允许坐下 3.已经在座位中 4.用户不存在 5.选择的座位已经其它人 6.金币不够 7.已经是庄家了
+    optional int32 seat_id = 2;                                       // 座位ID, 0~5, 如果code返回不为0，则seat_id为-1
+}
+
+// 玩家站起请求
+message CStandUpReq
+{
+	required int32 uid = 1;										      // 用户ID
+}
+
+// 玩家站起应答
+message SStandUpResp
+{
+	required int32 code = 1;										  // 返回结果 0.成功 1.系统错误 2.当前游戏状态不允许站起 3.当前用户不在座位上 4.用户不存在 5.座位没人 6.座位上的不是本人 7.已经有投注，不能离开座位
+}
+
+
+// 庄家信息
+message BankerInfo
+{
+	required int32 uid = 1;										      // 用户ID 
+	optional bytes nick_name = 2;									  // 昵称
+	optional bytes icon_url = 3;									  // 头像图标URL
+	optional int32 coin = 4;								          // 庄家金额
+}
+
+// 闲家信息
+message PlayerInfo
+{
+	required int32 uid = 1;										      // 用户ID 
+	optional int32 seat_id = 2;									      // 座位ID
+	optional bytes nick_name = 3;									  // 昵称
+	optional bytes icon_url = 4;									  // 头像图标URL
+	optional int32 bet_money = 5;									  // 投注金额
+	optional int32 coin = 6;								          // 庄家金额
+}
+
+// 投注桌子
+message BetArea
+{
+    required int32 area_id = 1;                                       // 投注ID 投注区域ID （0~3） 0:方块 1:红心 2:梅花 3:黑桃
+	required int32 bet_money = 2;									  // 投注金额
+}
+
+// 场景下发
+message SUpdateGameScene
+{
+	required int32 status = 1;										  // 桌面状态 1.上庄 2. 漏庄检查 3.投注 4.开牌等待 5.开牌 6.下轮准备
+	optional int32 cur_round_id = 2;							  	  // 当前游戏回合
+	optional int32 bet_status  = 3;								      // 投注状态 1.正常 2.禁止
+	optional int32 next_time = 4;                                     // 下一阶段时间（时间戳）
+	optional BankerInfo banker_info = 5;                              // 庄家信息
+    repeated PlayerInfo player_list = 6;                              // 闲家列表
+    repeated BetArea bet_area_list = 7;                               // 投注区列表 
+	optional int32 tax_rate = 8;                                      // 税率，整数，客户端界面可以使用“百分之tax_rate”来说明，tax_rate是下发的值
+}
+
+// 座位玩家在线状态
+message SUpdatePlayerOnlineState
+{
+	required int32 uid = 1;										      // 用户ID 
+	optional int32 seat_id = 2;									      // 座位ID
+	optional int32 online_state = 3;								  // 用户在线状态  0：断线  1：在线  2: 坐下 3：站起
+}
+
+// 游戏状态改变通知
+message SGameStatusChg
+{
+	required int32 status = 1;										  // 桌面状态 1.上庄 2. 漏庄检查 3.投注 4.开牌等待 5.开牌 6.下轮准备
+	optional int32 next_time = 2;                                     // 下一阶段时间（时间戳）
+}
+
+// 投注请求
+message CBetReq
+{
+    required int32 area_id = 1;                                       // 投注区域ID （0~3） 0:方块 1:红心 2:梅花 3:黑桃
+    optional int32 bet_money = 2;                                     // 用户投注筹码
+}
+
+// 投注应答
+message SBetResp
+{
+	required int32 code = 1;										  // 投注结果 0.成功 1.系统错误 2.投注区无效 3.用户不存在 4.用户不是闲家 5.余额不足 6.没有庄家 7.庄家余额不够 8.非投注时间
+	optional int32 area_id = 2;                                       // 投注区域ID （0~3） 0:方块 1:红心 2:梅花 3:黑桃
+	optional int32 user_current_bet_money = 3;                        // 用户当前投注金额
+	optional int32 user_current_tax = 4;                              // 用户当前投注扣税
+	optional int32 user_bet_money_sum = 5;                            // 用户当前投注总额
+	optional int32 user_tax_sum = 6;                                  // 用户当前扣税总额
+}
+
+// 更新投注信息广播
+message SUpdateBetInfo
+{
+    required int32 seat_id = 1;                                       // 座位ID，为-1时，为旁观者，0~5为VIP座位玩家
+    optional int32 player_bet_money = 2;                              // 玩家投注金额
+    optional int32 player_bet_sum = 3;                                // 玩家投注金额
+    optional BetInfo room_bet_list = 4;                               // 房间投注金额，房间顺序同（SUpdateGameScene）
+}
+
+// 庄家结算信息
+message BankerSettleInfo
+{
+    // 牌值说明
+    //2,   3,   4,   5,   6,   7,   8,   9,   10,  J,   Q,   K,   A
+    //0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08,0x09,0x0A,0x0B,0x0C,0x0D, 方块 2 - A
+    //0x11,0x12,0x13,0x14,0x15,0x16,0x17,0x18,0x19,0x1A,0x1B,0x1C,0x1D, 红桃 2 - A
+    //0x21,0x22,0x23,0x24,0x25,0x26,0x27,0x28,0x29,0x2A,0x2B,0x2C,0x2D, 梅花 2 - A
+    //0x31,0x32,0x33,0x34,0x35,0x36,0x37,0x38,0x39,0x3A,0x3B,0x3C,0x3D, 黑桃 2 - A
+    repeated int32 poker_value = 1;                                   // 牌值：如上说明
+	optional int32 poker_type = 2;                                    // 牌类型：0：高牌 1：对子 2：两对 3：三条 4：顺子 5：同花 6：葫芦 7：四条 8：同花顺 9：皇家同花顺
+	optional int32 settle_money = 3;                                  // 结算金额
+	optional int32 coin = 4;                                          // 庄家当前金币
+	optional int32 tax = 5;                                           // 扣税
+}
+
+// 投注区结算信息
+message BetAreaSettleInfo
+{
+    repeated int32 poker_value = 1;                                   // 牌值：如上说明
+	optional int32 poker_type = 2;                                    // 牌类型  0：高牌 1：对子 2：两对 3：三条 4：顺子 5：同花 6：葫芦 7：四条 8：同花顺 9：皇家同花顺
+    optional int32 win_and_lose = 3;                                  // 赢或输  0：输  1：赢
+	optional int32 odds = 4;                                          // 赔率
+	optional int32 area_id = 5;                                       // 投注区域ID （0~3） 0:方块 1:红心 2:梅花 3:黑桃
+}
+
+// 玩家结算信息
+message PlayerSettleInfo
+{
+    required int32 settle_money = 1;                                  // 结算金额
+	optional int32 seat_id = 2;									      // 座位ID
+	optional int32 coin = 3;                                          // 闲家当前金币
+	optional int32 tax = 4;                                           // 扣税
+}
+
+// 旁观者结算信息
+message LookOnSettleInfo
+{
+	optional int32 uid = 1;									          // 旁观者UID
+    required int32 settle_money = 2;                                  // 结算金额
+	optional int32 coin = 3;                                          // 闲家当前金币
+	optional int32 tax = 4;                                           // 扣税
+}
+
+// 投注结算广播
+message SBetSettle
+{
+	required int32 cur_round_id = 1;							      // 当前游戏回合
+	optional BankerSettleInfo banker_settle_info = 2;                 // 庄家结算信息
+    repeated BetAreaSettleInfo bet_area_settle_info = 3;              // 投注结算信息 0~3 投注区域ID （0~3） 0:方块 1:红心 2:梅花 3:黑桃
+	repeated PlayerSettleInfo player_settle_info = 4;                 // 闲家结算信息 0~5的闲家座位结算
+	repeated LookOnSettleInfo lookon_settle_info = 5;                 // 旁观者结算信息
+}
+
+// 获取玩家列表
+message CGetUserListReq
+{
+    required int32 uid = 1;                                           // 用户ID
+}
+
+// 用户列表应答
+message UserInfo
+{
+    required int32 uid = 1;                                           // 用户ID
+	optional bytes nick_name = 2;                                     // 用户昵称
+    optional bytes icon_url = 3;                                      // 用户头像URL
+    optional int32 coin = 4;                                          // 用户当前金币
+    optional int32 bet_money = 5;                                     // 用户投注筹码
+}
+
+// 用户列表应答
+message SGetUserListResp
+{
+	required int32 code = 1;										  // 处理结果 0.成功 1.系统错误
+	repeated UserInfo user_list = 2;                                  // 用户列表
+}
+
+// 用户离线
+message CUserOfflineReq
+{
+    required int32 uid = 1;                                           // 用户ID
+}
+
+// 用户恢复连接
+message CUserReonnReq
+{
+    required int32 uid = 1;                                           // 用户ID
+}
+
+// 用户上庄请求
+message CApplyBankerReq
+{
+    required int32 uid = 1;                                           // 用户ID
+}
+
+// 用户上庄应答
+message SApplyBankerResp
+{
+	required int32 code = 1;										  // 处理结果 0.成功 1.系统错误 2.金币不够 3.已经有庄家，正在排队中 4.当前不在选庄游戏状态
+}
+
+// 获取上庄申请列表
+message CGetApplyBankerListReq
+{
+    required int32 uid = 1;                                           // 用户ID
+}
+
+// 获取上庄申请列表应答
+message SGetApplyBankerListResp
+{
+	required int32 code = 1;										  // 处理结果 0.成功 1.系统错误
+	repeated UserInfo user_list = 2;                                  // 用户列表
+    optional int32 wait_ranking = 3;                                  // 等待上庄排名, 当前玩家如果没在列表中，则为-1
+}
+
+// 用户下庄请求
+message CExitBankerReq
+{
+    required int32 uid = 1;                                           // 用户ID
+}
+
+// 用户下庄应答
+message SExitBankerResp
+{
+	required int32 code = 1;										  // 处理结果 0.成功 1.系统错误 2.当前不在选庄状态 3.当前用户不是庄家或不在庄家申请队列
+}
+
+// 庄家变更通知
+message SBankerChangeNofity
+{
+    required int32 uid = 1;                                           // 用户ID
+    optional bytes nick_name = 2;                                     // 昵称
+    optional bytes icon_url = 3;                                      // 头像图标URL
+    optional int32 coin = 4;                                          // 庄家金币
+}
+
+
+// 输赢信息
+message BalanceInfo
+{
+	required int32 round_id = 1;									  // 回合ID
+    optional bytes datatime = 2;                                      // 回合时间
+    repeated int32 win_and_lose = 3;                                  // 0~3投注区的赢或输  0：输  1：赢
+}
+
+// 输赢(近30回合输赢)
+message SBalanceResp
+{
+	required int32 code = 1;										  // 处理结果 0.成功 1.系统错误 
+	repeated BalanceInfo balance_list = 2;                            // 输赢信息列表
+}
+
+// 庄家牌信息
+message BankerPokerInfo
+{
+    repeated int32 poker_value = 1;                                   // 牌值：如上说明
+	optional int32 poker_type = 2;                                    // 牌类型  0：高牌 1：对子 2：两对 3：三条 4：顺子 5：同花 6：葫芦 7：四条 8：同花顺 9：皇家同花顺
+}
+
+// 投注区牌信息
+message BetAreaPokerInfo
+{
+    repeated int32 poker_value = 1;                                   // 牌值：如上说明
+	optional int32 poker_type = 2;                                    // 牌类型  0：高牌 1：对子 2：两对 3：三条 4：顺子 5：同花 6：葫芦 7：四条 8：同花顺 9：皇家同花顺
+    optional int32 win_and_lose = 3;                                  // 赢或输  0：输  1：赢
+}
+
+// 牌局信息
+message RoundInfo
+{
+	required int32 round_id = 1;									  // 回合ID
+    optional bytes datatime = 2;                                      // 回合时间
+    optional BankerPokerInfo banker_poker_info = 3;                   // 庄家牌信息
+    repeated BetAreaPokerInfo bet_area_poker_info = 4;                // 0~3投注区的牌信息
+}
+
+// 牌局回顾
+message SRoundLookbackResp
+{
+	required int32 code = 1;										  // 处理结果 0.成功 1.系统错误 
+	repeated RoundInfo round_list = 2;                                // 回合信息列表
+}
+

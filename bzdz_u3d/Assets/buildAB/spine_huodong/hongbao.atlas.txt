@@ -1,0 +1,62 @@
+
+hongbao.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+30f14fdc195ab0250f4b8cfd89659441
+  rotate: true
+  xy: 2, 2
+  size: 95, 86
+  orig: 95, 86
+  offset: 0, 0
+  index: -1
+bg_hb_005
+  rotate: false
+  xy: 90, 31
+  size: 50, 66
+  orig: 50, 66
+  offset: 0, 0
+  index: -1
+hb1_tongguan
+  rotate: false
+  xy: 596, 276
+  size: 294, 234
+  orig: 294, 234
+  offset: 0, 0
+  index: -1
+hb2_tongguan.png
+  rotate: false
+  xy: 2, 99
+  size: 295, 411
+  orig: 295, 411
+  offset: 0, 0
+  index: -1
+hb3_tongguan.png
+  rotate: false
+  xy: 299, 236
+  size: 295, 274
+  orig: 295, 274
+  offset: 0, 0
+  index: -1
+hb5_tongguan.png
+  rotate: false
+  xy: 299, 81
+  size: 284, 153
+  orig: 284, 153
+  offset: 0, 0
+  index: -1
+hb6_tongguan.png
+  rotate: true
+  xy: 596, 74
+  size: 200, 208
+  orig: 200, 208
+  offset: 0, 0
+  index: -1
+qipao_hb
+  rotate: false
+  xy: 892, 417
+  size: 87, 93
+  orig: 87, 93
+  offset: 0, 0
+  index: -1

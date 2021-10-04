@@ -1,0 +1,174 @@
+
+weixinhaoyou.png
+size: 567,565
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+q_00000
+  rotate: false
+  xy: 309, 486
+  size: 156, 77
+  orig: 1650, 829
+  offset: 668, 229
+  index: -1
+q_00001
+  rotate: true
+  xy: 87, 165
+  size: 155, 77
+  orig: 1650, 829
+  offset: 669, 229
+  index: -1
+q_00002
+  rotate: true
+  xy: 249, 324
+  size: 154, 77
+  orig: 1650, 829
+  offset: 670, 229
+  index: -1
+q_00003
+  rotate: true
+  xy: 409, 332
+  size: 152, 77
+  orig: 1650, 829
+  offset: 671, 229
+  index: -1
+q_00004
+  rotate: true
+  xy: 86, 10
+  size: 153, 78
+  orig: 1650, 829
+  offset: 671, 229
+  index: -1
+q_00005
+  rotate: true
+  xy: 248, 14
+  size: 152, 78
+  orig: 1650, 829
+  offset: 672, 229
+  index: -1
+q_00006
+  rotate: true
+  xy: 407, 24
+  size: 152, 77
+  orig: 1650, 829
+  offset: 672, 230
+  index: -1
+q_00007
+  rotate: true
+  xy: 487, 178
+  size: 152, 77
+  orig: 1650, 829
+  offset: 672, 230
+  index: -1
+q_00008
+  rotate: true
+  xy: 486, 24
+  size: 152, 77
+  orig: 1650, 829
+  offset: 672, 230
+  index: -1
+q_00009
+  rotate: true
+  xy: 328, 21
+  size: 153, 77
+  orig: 1650, 829
+  offset: 671, 230
+  index: -1
+q_00010
+  rotate: true
+  xy: 488, 411
+  size: 152, 77
+  orig: 1650, 829
+  offset: 672, 231
+  index: -1
+q_00011
+  rotate: true
+  xy: 407, 178
+  size: 152, 78
+  orig: 1650, 829
+  offset: 672, 231
+  index: -1
+q_00012
+  rotate: true
+  xy: 328, 332
+  size: 152, 79
+  orig: 1650, 829
+  offset: 672, 230
+  index: -1
+q_00013
+  rotate: true
+  xy: 166, 17
+  size: 152, 80
+  orig: 1650, 829
+  offset: 672, 230
+  index: -1
+q_00014
+  rotate: true
+  xy: 2, 19
+  size: 151, 82
+  orig: 1650, 829
+  offset: 673, 229
+  index: -1
+q_00015
+  rotate: true
+  xy: 2, 172
+  size: 151, 83
+  orig: 1650, 829
+  offset: 673, 229
+  index: -1
+q_00016
+  rotate: false
+  xy: 2, 479
+  size: 151, 84
+  orig: 1650, 829
+  offset: 673, 229
+  index: -1
+q_00017
+  rotate: true
+  xy: 2, 325
+  size: 152, 83
+  orig: 1650, 829
+  offset: 672, 229
+  index: -1
+q_00018
+  rotate: false
+  xy: 155, 480
+  size: 152, 83
+  orig: 1650, 829
+  offset: 672, 229
+  index: -1
+q_00019
+  rotate: true
+  xy: 166, 326
+  size: 152, 81
+  orig: 1650, 829
+  offset: 672, 229
+  index: -1
+q_00020
+  rotate: true
+  xy: 166, 171
+  size: 153, 80
+  orig: 1650, 829
+  offset: 671, 229
+  index: -1
+q_00021
+  rotate: true
+  xy: 248, 168
+  size: 154, 78
+  orig: 1650, 829
+  offset: 670, 229
+  index: -1
+q_00022
+  rotate: true
+  xy: 328, 176
+  size: 154, 77
+  orig: 1650, 829
+  offset: 670, 229
+  index: -1
+q_00023
+  rotate: true
+  xy: 87, 322
+  size: 155, 77
+  orig: 1650, 829
+  offset: 669, 229
+  index: -1

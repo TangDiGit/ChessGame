@@ -1,0 +1,111 @@
+
+niuren.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+duizhanzi
+  rotate: false
+  xy: 2, 2
+  size: 251, 118
+  orig: 251, 118
+  offset: 0, 0
+  index: -1
+erduo
+  rotate: false
+  xy: 1550, 302
+  size: 46, 29
+  orig: 46, 29
+  offset: 0, 0
+  index: -1
+gongnniuzi
+  rotate: false
+  xy: 2, 303
+  size: 640, 180
+  orig: 640, 180
+  offset: 0, 0
+  index: -1
+lian1
+  rotate: false
+  xy: 1374, 162
+  size: 119, 136
+  orig: 119, 136
+  offset: 0, 0
+  index: -1
+lian2
+  rotate: true
+  xy: 1876, 383
+  size: 100, 124
+  orig: 100, 124
+  offset: 0, 0
+  index: -1
+lian3
+  rotate: false
+  xy: 255, 9
+  size: 133, 111
+  orig: 133, 111
+  offset: 0, 0
+  index: -1
+lian4
+  rotate: false
+  xy: 1742, 373
+  size: 132, 110
+  orig: 132, 110
+  offset: 0, 0
+  index: -1
+niu
+  rotate: false
+  xy: 644, 122
+  size: 363, 361
+  orig: 363, 361
+  offset: 0, 0
+  index: -1
+niuzaizi
+  rotate: false
+  xy: 2, 122
+  size: 639, 179
+  orig: 639, 179
+  offset: 0, 0
+  index: -1
+qi
+  rotate: false
+  xy: 1495, 238
+  size: 50, 60
+  orig: 50, 60
+  offset: 0, 0
+  index: -1
+ren
+  rotate: false
+  xy: 1009, 122
+  size: 363, 361
+  orig: 363, 361
+  offset: 0, 0
+  index: -1
+ren1
+  rotate: true
+  xy: 390, 15
+  size: 105, 125
+  orig: 105, 125
+  offset: 0, 0
+  index: -1
+ren2
+  rotate: false
+  xy: 1374, 300
+  size: 174, 183
+  orig: 174, 183
+  offset: 0, 0
+  index: -1
+shoubi
+  rotate: true
+  xy: 1550, 333
+  size: 150, 190
+  orig: 150, 190
+  offset: 0, 0
+  index: -1
+xingxing
+  rotate: false
+  xy: 1374, 123
+  size: 40, 37
+  orig: 40, 37
+  offset: 0, 0
+  index: -1

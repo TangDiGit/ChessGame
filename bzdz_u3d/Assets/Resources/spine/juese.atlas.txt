@@ -1,0 +1,139 @@
+
+juese.png
+size: 724,722
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+body
+  rotate: false
+  xy: 309, 384
+  size: 327, 336
+  orig: 327, 336
+  offset: 0, 0
+  index: -1
+jingbi01
+  rotate: false
+  xy: 495, 54
+  size: 113, 128
+  orig: 121, 130
+  offset: 2, 0
+  index: -1
+jingbi02
+  rotate: true
+  xy: 610, 33
+  size: 104, 109
+  orig: 108, 111
+  offset: 2, 1
+  index: -1
+lian
+  rotate: true
+  xy: 610, 139
+  size: 105, 112
+  orig: 105, 112
+  offset: 0, 0
+  index: -1
+maozi
+  rotate: true
+  xy: 460, 184
+  size: 198, 127
+  orig: 198, 129
+  offset: 0, 0
+  index: -1
+piaodai01
+  rotate: false
+  xy: 680, 317
+  size: 42, 96
+  orig: 42, 96
+  offset: 0, 0
+  index: -1
+piaodai02
+  rotate: true
+  xy: 638, 415
+  size: 95, 47
+  orig: 95, 47
+  offset: 0, 0
+  index: -1
+piaodai03
+  rotate: true
+  xy: 638, 615
+  size: 105, 82
+  orig: 105, 82
+  offset: 0, 0
+  index: -1
+puke
+  rotate: false
+  xy: 107, 22
+  size: 63, 62
+  orig: 63, 62
+  offset: 0, 0
+  index: -1
+shou01
+  rotate: false
+  xy: 2, 86
+  size: 171, 247
+  orig: 171, 247
+  offset: 0, 0
+  index: -1
+shou02
+  rotate: true
+  xy: 175, 71
+  size: 262, 152
+  orig: 262, 152
+  offset: 0, 0
+  index: -1
+toufa01
+  rotate: false
+  xy: 329, 71
+  size: 164, 107
+  orig: 164, 107
+  offset: 0, 0
+  index: -1
+toufa02
+  rotate: false
+  xy: 589, 246
+  size: 89, 136
+  orig: 89, 136
+  offset: 0, 0
+  index: -1
+toufa03
+  rotate: false
+  xy: 638, 512
+  size: 59, 101
+  orig: 59, 101
+  offset: 0, 0
+  index: -1
+toufa_a
+  rotate: false
+  xy: 2, 3
+  size: 103, 81
+  orig: 103, 81
+  offset: 0, 0
+  index: -1
+toufa_b
+  rotate: false
+  xy: 2, 335
+  size: 305, 385
+  orig: 305, 385
+  offset: 0, 0
+  index: -1
+toufa_c
+  rotate: false
+  xy: 329, 180
+  size: 129, 202
+  orig: 129, 202
+  offset: 0, 0
+  index: -1
+yanpi01
+  rotate: false
+  xy: 638, 384
+  size: 37, 29
+  orig: 37, 29
+  offset: 0, 0
+  index: -1
+yanpi02
+  rotate: true
+  xy: 699, 581
+  size: 32, 21
+  orig: 32, 21
+  offset: 0, 0
+  index: -1

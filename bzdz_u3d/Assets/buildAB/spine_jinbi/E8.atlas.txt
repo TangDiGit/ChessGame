@@ -1,0 +1,209 @@
+
+E8.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+coins1
+  rotate: false
+  xy: 1552, 372
+  size: 130, 130
+  orig: 130, 130
+  offset: 0, 0
+  index: -1
+coins10
+  rotate: false
+  xy: 504, 59
+  size: 131, 131
+  orig: 131, 131
+  offset: 0, 0
+  index: -1
+coins11
+  rotate: true
+  xy: 1805, 391
+  size: 111, 129
+  orig: 111, 129
+  offset: 0, 0
+  index: -1
+coins12
+  rotate: false
+  xy: 1811, 260
+  size: 102, 129
+  orig: 102, 129
+  offset: 0, 0
+  index: -1
+coins13
+  rotate: true
+  xy: 816, 166
+  size: 81, 132
+  orig: 81, 132
+  offset: 0, 0
+  index: -1
+coins14
+  rotate: true
+  xy: 1208, 158
+  size: 96, 121
+  orig: 96, 121
+  offset: 0, 0
+  index: -1
+coins15
+  rotate: false
+  xy: 763, 59
+  size: 109, 105
+  orig: 109, 105
+  offset: 0, 0
+  index: -1
+coins16
+  rotate: false
+  xy: 1668, 161
+  size: 120, 100
+  orig: 120, 100
+  offset: 0, 0
+  index: -1
+coins17
+  rotate: false
+  xy: 1545, 163
+  size: 121, 100
+  orig: 121, 100
+  offset: 0, 0
+  index: -1
+coins18
+  rotate: false
+  xy: 1790, 165
+  size: 125, 93
+  orig: 125, 93
+  offset: 0, 0
+  index: -1
+coins19
+  rotate: false
+  xy: 1331, 166
+  size: 125, 102
+  orig: 125, 102
+  offset: 0, 0
+  index: -1
+coins2
+  rotate: false
+  xy: 1936, 373
+  size: 110, 129
+  orig: 110, 129
+  offset: 0, 0
+  index: -1
+coins20
+  rotate: false
+  xy: 1684, 263
+  size: 125, 115
+  orig: 125, 115
+  offset: 0, 0
+  index: -1
+coins3
+  rotate: true
+  xy: 1915, 271
+  size: 100, 128
+  orig: 100, 128
+  offset: 0, 0
+  index: -1
+coins4
+  rotate: true
+  xy: 950, 161
+  size: 86, 126
+  orig: 86, 126
+  offset: 0, 0
+  index: -1
+coins5
+  rotate: true
+  xy: 1331, 85
+  size: 79, 123
+  orig: 79, 123
+  offset: 0, 0
+  index: -1
+coins6
+  rotate: false
+  xy: 1458, 142
+  size: 85, 126
+  orig: 85, 126
+  offset: 0, 0
+  index: -1
+coins7
+  rotate: true
+  xy: 1078, 161
+  size: 93, 128
+  orig: 93, 128
+  offset: 0, 0
+  index: -1
+coins8
+  rotate: true
+  xy: 1552, 265
+  size: 105, 130
+  orig: 105, 130
+  offset: 0, 0
+  index: -1
+coins9
+  rotate: false
+  xy: 637, 59
+  size: 124, 131
+  orig: 124, 131
+  offset: 0, 0
+  index: -1
+fsg1
+  rotate: false
+  xy: 2, 2
+  size: 500, 500
+  orig: 500, 500
+  offset: 0, 0
+  index: -1
+fsg2
+  rotate: false
+  xy: 1684, 380
+  size: 119, 122
+  orig: 119, 122
+  offset: 0, 0
+  index: -1
+gq
+  rotate: false
+  xy: 1070, 256
+  size: 246, 246
+  orig: 246, 246
+  offset: 0, 0
+  index: -1
+guangdian1
+  rotate: false
+  xy: 874, 119
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+guanghuan1
+  rotate: false
+  xy: 1318, 270
+  size: 232, 232
+  orig: 232, 232
+  offset: 0, 0
+  index: -1
+guangqiu
+  rotate: false
+  xy: 504, 192
+  size: 310, 310
+  orig: 310, 310
+  offset: 0, 0
+  index: -1
+julongguang
+  rotate: false
+  xy: 816, 249
+  size: 252, 253
+  orig: 252, 253
+  offset: 0, 0
+  index: -1
+xx1
+  rotate: false
+  xy: 1917, 165
+  size: 112, 104
+  orig: 112, 104
+  offset: 0, 0
+  index: -1
+xx2
+  rotate: false
+  xy: 504, 9
+  size: 54, 48
+  orig: 54, 48
+  offset: 0, 0
+  index: -1

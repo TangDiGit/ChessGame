@@ -1,0 +1,183 @@
+package com.game.DzBrnn;
+
+//开始游戏   SUB_S_READY_START
+message ReadyStart
+{
+	required int32 endTime = 1;		//倒计时（秒）
+
+}
+//开始游戏   SUB_S_GAME_START
+message GameStart
+{
+	required int32 endTime = 1;		//下注时间（秒）
+	required int64 maxSelfCanInScore = 2;		//自己最多能下多少分
+}
+
+//结算游戏   SUB_S_GAME_END
+message GameEnd
+{
+	required int32 endTime = 1;		//结算时间（秒）
+	required int64 selfWinScore = 2;		//自己输赢多少分
+	required int64 selfRevenue = 3;		//自己税收
+	//其他玩家输赢情况(只有显示在座位上才有)
+	repeated int32 otherWinChairID = 4;
+	repeated int64 otherWinScore = 5;
+
+	repeated int32 areaWin = 6;			//可下注区域输赢(可下注区域的输赢表) 0 :输, 1：赢
+	//牌数据
+	repeated int32 cards = 7;			//牌数据 1 :庄家5张, 2：其他4闲家顺序 各5张
+	repeated int32 cardTypes = 8;			//最后牌型 庄家-闲家
+}
+
+//下注   SUB_S_PLACE_JETTON
+message PlaceJetton
+{
+	required int32 userid = 1;		//下注玩家
+	required int32 jettonArea = 2;		//下在什么区域
+	required int64 jettonScore = 3;		//下多少金币
+}
+//下注失败(凡是下注失败都返回这个数据)   SUB_S_PLACE_JETTON_FAIL
+message PlaceJettonFail
+{
+	required int32 userid = 1;		//下注玩家
+	required int32 jettonArea = 2;		//下在什么区域
+	required int64 jettonScore = 3;		//下多少金币
+}
+
+
+
+//牌型记录   SUB_S_SEND_RECORD 
+message CardsRecord
+{
+	repeated int64 winrecords = 1;			//走势表(移位操作) 第1位为 :闲家1, (最多10个记录)
+	repeated int32 cardtypes = 2;		//赢牌牌型 
+	repeated int32 cards = 3;		//牌 (每局25张)
+	repeated int64 createtime = 4;	//时间
+}
+
+//房间桌子信息(进入房间最先发到客户端)   SUB_S_TABLE_INFO
+message TableInfo
+{
+	required int64 userLimitScore = 1;		//每个玩家最多下多少金币(防止溢出)
+}
+
+//场景准备开始状态    GS_READY 状态
+message SceneReadyStart
+{
+	required int32 endTime = 1;		//剩下多少秒
+}
+//场景下注状态     GS_PLACE_JETTON 状态
+message ScenePlaceJetton
+{
+	required int32 endTime = 1;		//剩下多少秒
+	repeated int64 areaInAllScore = 2;  //每个区域下多少金币
+	repeated int64 meAreaInAllScore = 3;  //自己每个区域下多少金币
+}
+
+
+//场景结算状态(这个客户端最后显示 等待下一局 不然很多效果不知道怎么显示)     GS_GAME_END 状态
+message SceneGameEnd
+{
+	required int32 endTime = 1;		//剩下多少秒
+}
+
+//玩家列表信息  SUB_S_GET_USER_LIST
+message UserInfo
+{
+	required int32 userid = 1;		//
+	required string nickname = 2;		//
+	required string headurl = 3;		//
+	required int64 score = 4;		//
+}
+
+//坐下玩家信息  SUB_S_USER_SIT_DOWN
+message UserSitInfo
+{
+	required int32 userid = 1;		//
+	required string nickname = 2;		//
+	required string headurl = 3;		//
+	required int64 score = 4;		//
+	required int32 sex = 5;		//
+	required int32 sitindex = 6;		//位置0-7
+}
+
+//坐下玩家列表 SUB_S_INIT_USER_SIT_INFO  SUB_S_UPDATE_USER_SIT_INFO
+message InitUserSitInfo
+{
+	repeated UserSitInfo usersitinfo = 1;  //玩家表
+}
+
+//坐下玩家请求  SUB_S_USER_SIT_UP
+message ClientSitChair
+{
+	required int32 sitindex = 1;		//位置0-7
+}
+
+//换庄  SUB_S_CHANGE_BANKER
+message ChangeBanker
+{
+	required int32 bsystembank = 1;		//如果是系统当庄这里是 1， 玩家当庄位0
+	required UserSitInfo user = 2;		//庄家信息,如果是系统庄，玩家没信息
+}
+
+//申请上庄  SUB_S_APPLY_BANKER
+message ApplyBanker
+{
+	required int32 userid = 1;		//申请上庄玩家ID ，申请错误不返回该数据包
+	required int32 applybankercount = 2;		//当前上庄人数
+}
+
+//取消上庄  SUB_S_CANCEL_BANKER
+message CancelBanker
+{
+	required int32 userid = 1;		//取消上庄玩家ID ，申请错误不返回该数据包
+}
+
+//上庄列表  SUB_S_APPLY_BANKER_LIST
+message ApplyBankerList
+{
+	repeated UserInfo userinfo = 1;  //
+}
+
+
+//坐下玩家列表 SUB_S_GET_USER_LIST
+message GetUserInfoList
+{
+	required int32 startindex = 1;		//开始列表位置
+	required int32 totalusercount = 2;		//全部玩家总数量
+	repeated UserInfo userinfo = 3;  //玩家表
+}
+
+//获取奖池 SUB_S_SEND_JACK_POT
+message GetJackPotInfo
+{
+	required int64 curscore = 1;		//
+}
+
+//获取奖池记录 SUB_S_SEND_JACK_POT
+message GetJackPotUserRecord
+{
+	repeated int32 userid = 1;		//玩家表
+	repeated string nickname = 2;		//
+	repeated string headurl = 3;		//
+	repeated int64 winscore = 4;		//
+	repeated int64 createtime = 5;		//创建时间
+	repeated int32 cards = 6;		//牌 (每个玩家5张)
+}
+
+
+/////////////////////////////////客户端请求////////////////////////////
+///下注   SUB_C_PLACE_JETTON
+message C_PlaceJetton
+{
+	required int32 area = 1;		//下注区域
+	required int64 socre = 2;		//下多少金币
+}
+
+//获取玩家列表
+message C_GetUserList
+{
+	required int32 startindex = 1;		//开始列表位置
+	required int32 maxCount = 2;		//申请多少个(最多200)
+}
+

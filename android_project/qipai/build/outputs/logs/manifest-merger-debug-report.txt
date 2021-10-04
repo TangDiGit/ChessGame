@@ -1,0 +1,230 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:2:1-85:12
+MERGED from [XInstall_V1.1.9.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6fb7c6e8b46390eafcec96c3599c21d2\AndroidManifest.xml:2:1-24:12
+INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:2:1-85:12
+INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:2:1-85:12
+	package
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:4:5-26
+		INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+		INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:7:5-30
+		INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+		INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:5:5-51
+	xmlns:android
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:3:5-63
+	android:versionCode
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:6:5-28
+		INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+		INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+	android:installLocation
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:8:5-45
+supports-screens
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:10:3-15:35
+	android:largeScreens
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:13:7-34
+	android:smallScreens
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:11:7-34
+	android:normalScreens
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:12:7-35
+	android:xlargeScreens
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:14:7-35
+	android:anyDensity
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:15:7-32
+application
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:16:3-61:17
+MERGED from [XInstall_V1.1.9.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6fb7c6e8b46390eafcec96c3599c21d2\AndroidManifest.xml:11:5-22:19
+MERGED from [XInstall_V1.1.9.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6fb7c6e8b46390eafcec96c3599c21d2\AndroidManifest.xml:11:5-22:19
+	android:requestLegacyExternalStorage
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:23:7-50
+	android:label
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:21:7-39
+	android:icon
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:20:7-38
+	android:allowBackup
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:18:7-34
+	android:theme
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:19:7-48
+	android:usesCleartextTraffic
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:22:7-42
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:17:7-42
+activity#com.bz.bzdz.XInstallActivity
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:24:5-41:16
+	android:screenOrientation
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:26:9-52
+	android:launchMode
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:28:9-40
+	android:configChanges
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:27:9-182
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:25:9-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:29:7-32:23
+action#android.intent.action.MAIN
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:30:9-60
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:30:17-58
+category#android.intent.category.LAUNCHER
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:31:9-68
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:31:19-66
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:xilqgw5y7
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:34:7-39:23
+action#android.intent.action.VIEW
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:35:9-60
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:35:17-58
+category#android.intent.category.DEFAULT
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:36:9-67
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:36:19-65
+category#android.intent.category.BROWSABLE
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:37:9-69
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:37:19-67
+data
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:38:9-43
+	android:scheme
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:38:15-41
+activity#com.bz.bzdz.wxapi.WXEntryActivity
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:44:5-50:45
+	android:launchMode
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:49:9-39
+	android:exported
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:48:9-32
+	android:configChanges
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:47:9-70
+	android:theme
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:46:9-68
+	android:taskAffinity
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:50:9-43
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:45:9-46
+meta-data#unity.build-id
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:53:5-101
+	android:value
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:53:46-98
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:53:16-45
+meta-data#unity.splash-mode
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:54:5-69
+	android:value
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:54:49-66
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:54:16-48
+meta-data#unity.splash-enable
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:55:5-74
+	android:value
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:55:51-71
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:55:16-50
+meta-data#com.xinstall.APP_KEY
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:58:5-78
+	android:value
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:58:52-75
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:58:16-51
+uses-permission#android.permission.INTERNET
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:64:3-64
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:64:20-62
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:65:3-76
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:65:20-74
+uses-feature#0x00020000
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:68:3-81
+	tools:ignore
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:68:50-78
+	android:glEsVersion
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:68:17-49
+uses-feature#android.hardware.touchscreen
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:69:3-88
+	android:required
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:69:61-85
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:69:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:70:3-99
+	android:required
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:70:72-96
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:70:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:71:3-108
+	android:required
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:71:81-105
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:71:17-80
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:74:3-73
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:74:20-71
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:75:3-72
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:75:20-70
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:76:3-108
+	tools:ignore
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:76:77-105
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:76:20-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:80:3-77
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:80:20-74
+uses-feature#android.hardware.location.gps
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:81:3-89
+	android:required
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:81:62-86
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:81:17-61
+uses-feature#android.hardware.location
+ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:82:3-85
+	android:required
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:82:58-82
+	android:name
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml:82:17-57
+uses-sdk
+INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+MERGED from [XInstall_V1.1.9.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6fb7c6e8b46390eafcec96c3599c21d2\AndroidManifest.xml:7:5-9:41
+MERGED from [XInstall_V1.1.9.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6fb7c6e8b46390eafcec96c3599c21d2\AndroidManifest.xml:7:5-9:41
+INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+		INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+		ADDED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+		INJECTED from D:\qipai_002\qipai_002\SVN\bzdz\qipai\src\main\AndroidManifest.xml
+activity#com.xinstall.OnePXActivity
+ADDED from [XInstall_V1.1.9.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6fb7c6e8b46390eafcec96c3599c21d2\AndroidManifest.xml:12:9-14:57
+	android:theme
+		ADDED from [XInstall_V1.1.9.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6fb7c6e8b46390eafcec96c3599c21d2\AndroidManifest.xml:14:13-54
+	android:name
+		ADDED from [XInstall_V1.1.9.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6fb7c6e8b46390eafcec96c3599c21d2\AndroidManifest.xml:13:13-54
+meta-data#xinstall_third_platform
+ADDED from [XInstall_V1.1.9.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6fb7c6e8b46390eafcec96c3599c21d2\AndroidManifest.xml:16:9-18:85
+	android:value
+		ADDED from [XInstall_V1.1.9.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6fb7c6e8b46390eafcec96c3599c21d2\AndroidManifest.xml:18:13-82
+	android:name
+		ADDED from [XInstall_V1.1.9.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6fb7c6e8b46390eafcec96c3599c21d2\AndroidManifest.xml:17:13-51
+meta-data#xinstall_third_version
+ADDED from [XInstall_V1.1.9.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6fb7c6e8b46390eafcec96c3599c21d2\AndroidManifest.xml:19:9-21:87
+	android:value
+		ADDED from [XInstall_V1.1.9.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6fb7c6e8b46390eafcec96c3599c21d2\AndroidManifest.xml:21:13-84
+	android:name
+		ADDED from [XInstall_V1.1.9.aar] C:\Users\Administrator\.gradle\caches\transforms-2\files-2.1\6fb7c6e8b46390eafcec96c3599c21d2\AndroidManifest.xml:20:13-50

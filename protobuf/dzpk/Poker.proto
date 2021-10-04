@@ -1,0 +1,512 @@
+package com.game.dezhou;
+
+///玩家弃牌 0x50
+message QiPaiReq
+{
+	required int32 seq = 1;
+}
+
+///玩家弃牌广播 0x50
+message  QiPaiBroadcast
+{
+	required int32 seq = 1;
+	required int32 userid = 2; ///弃牌玩家id
+	required int32 nextActionUserId = 3; //下一次动作玩家id
+    required int64 selfscore = 4; //弃牌玩家身上金币数
+    required int64 totalbetscore = 5; //当前底池
+    required int64 turnlessscore = 6; //最少跟注多少
+    required int64 addlessscore = 7; //最少加注
+}
+
+
+///cmd=0x51
+message  GenZhuReq
+{
+	required int32 seq = 1;
+	required int32 gold = 2 [default = 0];
+	required int32 score = 3 [default = 0];
+}
+
+///cmd=0x51
+message  GenZhuBroadcast
+{
+	required int32 seq = 1;
+	required int32 userid = 2;
+	required int32 gold = 3 [default = 0];
+	required int32 score = 4 [default = 0];
+	required int32 nextActionUserId = 5; //下一次动作玩家id
+    required int64 totalbetscore = 6; //当前底池
+    required int64 turnlessscore = 7; //最少跟注多少
+    required int64 addlessscore = 8; //最少加注
+}
+
+///0x52
+message JiaZhuReq
+{
+	required int32 seq = 1;
+	required int32 gold = 2 [default = 0];
+	required int32 score = 3 [default = 0];
+}
+
+///0x52
+message  JiaZhuBroadcast
+{
+	required int32 seq = 1;
+	required int32 userid = 2;
+	required int32 gold = 3 [default = 0];
+	required int32 score = 4 [default = 0];
+	required int32 nextActionUserId = 5; //下一次动作玩家id
+    required int64 totalbetscore = 6; //当前底池
+    required int64 turnlessscore = 7; //最少跟注多少
+    required int64 addlessscore = 8; //最少加注
+}
+
+///cmd=0x53
+message AllInReq
+{
+	required int32 seq = 1;
+}
+
+///cmd=0x53
+message AllInBroadcast
+{
+	required int32 seq = 1;
+	required int32 userid = 2;
+	required int32 gold = 3[default = 0];
+	required int32 score = 4[default = 0];
+	required int32 nextActionUserId = 5; //下一次动作玩家id
+    required int64 totalbetscore = 6; //当前底池
+    required int64 turnlessscore = 7; //最少跟注多少
+    required int64 addlessscore = 8; //最少加注
+}
+
+///cmd=0x54
+message GuoPaiReq
+{
+	required int32 seq = 1;
+}
+
+///cmd=0x54
+message GuoPaiBroadcast
+{
+	required int32 seq = 1;
+	required int32 userid = 2;
+	required int32 nextActionUserId = 3; //下一次动作玩家id
+    required int64 totalbetscore = 4; //当前底池
+    required int64 turnlessscore = 5; //最少跟注多少
+    required int64 addlessscore = 6; //最少加注
+}
+
+//0x55
+message FaShouPai
+{
+	required  int32 seq = 1;
+	required  int32 userid = 2;
+	repeated  int32 cards = 3;
+    required int64 totalbetscore = 4; //当前底池
+    required int64 turnlessscore = 5; //最少跟注多少
+    required int64 addlessscore = 6; //最少加注
+}
+
+//0x56
+message FaZhuoZiPaiBroadcast
+{
+	required int32 seq = 1;
+	required  int32 cardcount = 2;
+	repeated  int32 cards = 3;	
+	optional  int32 cardkind = 4;	
+	required int32 nextActionUserId = 5; //下一次动作玩家id
+    required int64 totalbetscore = 6; //当前底池
+    required int64 turnlessscore = 7; //最少跟注多少
+    required int64 addlessscore = 8; //最少加注
+}
+
+// cmd=0x57 
+message GameReadyBroacast
+{
+	required int32 affterstarttime = 1; //从准备开始游戏到游戏开始的时间间隔
+        repeated string infos=2;                     //玩家头像等信息
+}
+
+//cmd=0x58
+message GameStartBroacast
+{
+    required int32 seq = 1;        //本局游戏动作序列号
+    required int32 actiontime = 2; ///玩家游戏开始后每个动作的时间间隔
+    required int32 hostid = 3;     //庄家id
+    required int32 xmuserid = 4;   ///小盲注userid
+    required int32 dmuserid = 5;   //大盲注userid
+    required int32 nextActionUserId = 6;
+    required int32 xmgold = 7[default = 0];  //小盲注金币数量
+    required int32 xmscore = 8[default = 0]; //小盲注积分数量
+    required int32 frontbet=9 [default = 0];     //筹码
+    //repeated string infos=10;                     //玩家头像等信息
+}
+
+
+//cmd = 0x59
+message BianChiBroadcast
+{
+    repeated int32 bianchibet = 1;            //每个边池筹码
+    required int32 totalgold  = 2;            //底池
+}
+
+message PokerUserData
+{
+	required int32 userid = 1;
+	required int32 seatid  = 2;  ///玩家座位
+	required int32 jiangchi = 3;  //玩家奖池（边池）
+	required int32 tempgold = 4 [default=0]; ///玩家总共下的注
+	required int32 curroundbet = 5[default=0]; ///玩家当前轮的下注值
+	required int32 isallin = 6; ///玩家是否allin，1allin，0no allin
+	required int32 ispass = 7;  //玩家是否已经过牌
+	repeated int32 cards = 8;      ///玩家手上的牌数
+	required int32 cardkind = 9;   //牌型
+        required int32 status = 10;    //玩家当前操作状态
+}
+
+///cmd = 0x5a,游戏已经开始时推送当前游戏数据
+message PushRecoverScene  
+{
+	repeated PokerUserData pokerusers = 1;
+	required int32 nextActionUserId = 2; //
+	required int32 currRound = 3; ///当前轮数
+	repeated int32 cards = 4; ////桌子上的牌数
+	required int32 hostid = 5; ///本轮庄家id
+	required int32 seq = 6; ///当前的序列号
+	required int32 currmaxgold = 7;//本轮下的最大注
+	required int32 totalgold = 8; ///弃牌玩家一共下的筹码数
+	required int32 xmgold = 9[default = 0];  //小盲注金币数量
+    repeated int32 bianchibet = 10;    ////桌子上的边池
+    required int64 totalbetscore = 11; //当前底池
+    required int64 turnlessscore = 12; //最少跟注多少
+    required int64 addlessscore = 13; //最少加注
+}
+
+
+
+message WinUserData
+{
+	required int32 userid = 1;
+	required int32 totalgold = 2[default = 0];  //玩家当前总金币数
+	required int32 wingold = 3[default = 0];    //玩家金币增量，正数表示赢，负数标输
+    repeated int32 bianchigold= 4;              //边池瓜分的金额  （所有加起来等于毛利）
+
+}
+
+message RoundUsersCalcInfo
+{
+    repeated WinUserData  winuserdatas = 1;    ///当前轮结算时，相关玩家信息
+    required int32        goldtype     = 2[default = 1];    //1：你赢了  2:  返还
+}
+
+message GameOverUserCards
+{
+    required int32 userid = 1;
+    repeated int32 cards  = 2 ; 
+    optional int32 cardkind = 3 [default = -1]; ////牌型
+    repeated int32 cardmax = 4;  //最大牌
+    required int32 status = 5;   //玩家游戏状态
+    required int64 selfscore = 6;               //玩家身上金币数
+
+}
+
+///0x60  多次结算（ 根据结算的轮数一次发送 ）
+message GameOverBroadcast
+{
+    repeated RoundUsersCalcInfo rounds = 1;     //结算轮数 （A 一玩家独赢   B 多玩家平分奖池  C 一玩家独返  D 多玩家同返）
+    repeated GameOverUserCards  usercards = 2;  //玩家牌数据
+}
+
+message AllUserAllInCards
+{
+    repeated int32 userid = 1;
+    repeated int32 cards  = 2 ; 
+}
+
+
+///cmd = 0x62, 用于客户端预操作时，服务器处理
+message GamePreOperate
+{
+	required int32   seq = 1;
+	required int32   operatetype = 2;    //1:让/弃   2:自动让牌  3:跟任何注
+}
+
+
+//牌局回顾  0x63
+message CardsReviewRequest
+{
+    required int32   tableid       = 1;            
+    required int32   endrecord     = 2;            //结束的记录（endrecord <10 从0开始）
+}
+
+message UserInfo
+{
+    required int32   userid     = 1;                  //用户ID
+    required string  info       = 2;                  //头像信息
+    repeated int32   handcards  = 3;                  //玩家手牌
+    required int32   cardtype   = 4;                  //玩家牌型
+    required int32   wingold    = 5;                  //玩家输赢金币
+    required int32   status     = 6;                  //all in, 弃牌，跟注，过牌
+}
+
+message CardsReviewRound
+{
+    repeated UserInfo userinfos     = 1;
+    repeated int32    publiccards   = 2;             //包括三张公众牌，和牌，转牌
+}
+
+message CardsReviewRespone
+{
+    repeated CardsReviewRound round    = 1;          //按时间先后顺序排序
+    required int32         tableid     = 2;     
+}
+
+
+///cmd = 0x61,广播参与游戏携带金币(暂时未用)
+//message GameBringCoin
+//{
+//    required int32 userid = 1;
+//    required int32 userbringcoin = 2;
+//}
+
+//玩家是否显示手牌  0x70
+message IsPublicCardsRequest
+{
+        required int32  ispublic    = 1 [default = 0];  //默认0：不公布手牌  1：结算时公布手牌
+}
+
+//玩家补充筹码 0x71
+message ChargeGoldRequest
+{
+        required int32  chargegold       = 1 ;                 //补充筹码值
+	required int32  autocharge       = 2 [default = 0];    //0:默认不操作，1:当金币为0时，自动买入，2:每局自动买入最大值
+}
+
+//玩家猜手牌 0x80
+message GuessHandCardsRequest
+{
+        required int32  betgold       = 1 ;                 //筹码为 0,请求是否可下注猜手牌金额
+}
+message GuessHandCardsResponse
+{
+        repeated int32  betgold       = 1 ;                 //押注金额
+        required int32  guesstype     = 2 ;                 //系统下发猜手牌值
+        required int32  multiplebet   = 3 ;                 //倍数
+        required int32  success       = 4 ;                 //0,押注失败 1,押注成功 2,已押注 3,可押注
+}
+
+
+//玩家猜手牌中奖通知 0x81
+message GuessHandCardsWinNotice
+{
+        required int32  wingold       = 1 ;                   //中奖金额  >0 为中奖， =0 未中奖， -1 时金币不足
+}
+//踢人卡 0x82
+message TPersonCardRequest
+{
+	required int32  seq              = 1 ;
+        required int32  fromuserid       = 2 ; 
+	required int32  touserid         = 3 ; 
+	required int32  req_type         = 4 ;  //请求类型 1,踢人 2,同意 3,拒绝
+}
+
+message TPersonCardResponse
+{
+	required int32  seq              = 1 ;
+        required int32  fromuserid       = 2 ; 
+	required int32  touserid         = 3 ; 
+	required int32  req_type         = 4 ;  //请求类型 1,踢人 2,同意 3,拒绝,4,已通过 5未通过
+        required int32  agree_count      = 5;
+        required int32  reject_count     = 6;
+        required int32  total_count      = 7;
+}
+
+//打赏及收费表情  0x83
+message UserInteractionRequest
+{
+	required int32  userid                  = 1 ;   //0 为河官，>0  为指定玩家
+        required string interaction_infos       = 2 ;    //用于客户端透传
+}
+
+message UserInteractionResponse
+{
+	required int32  ret                     = 1 ;
+        required string interaction_infos       = 2 ;
+}
+
+message UserWinJackPotInfo
+{
+        required int32 userid = 1;                   //玩家中的奖池
+	required int32 wingold = 2[default = 0];     //中的奖池多少
+        required int32 cardtype = 3[default = 0];    //中奖牌型
+}
+
+//奖池广播  0x84
+message UserWinJackPotBroadcast
+{
+	repeated UserWinJackPotInfo potinfo = 1;
+}
+
+//玩家信息更新
+message GetUserInfo
+{
+    required int32 userid = 1;
+    required int32 seatid  = 2;  ///玩家座位
+    required string info = 3[default = "{}"];   
+}
+
+message UserCanSeePublicCard
+{
+    required int64 seeleftpubliccardscore = 1;               //看公共牌费用
+}
+
+message UserSeePublicCard
+{
+	required int32  ret                     = 1 ;      //0成功 1.失败
+    repeated int32    publiccards   = 2;             //公告牌，发剩下没翻的牌
+    required int64 selfscore = 3; //玩家身上金币数
+    required int64 tablemaxscore = 4; //桌子上最大下注数
+}
+
+//猜手牌请求
+message UserGuessCardResponse
+{
+    required int32 sptype = 1;               //猜手牌类型
+    required int32 betscore = 2;               //下注多少
+    required int32 playcount = 3;               //局数 -1： 一直追
+}
+
+
+//每局猜手牌结果
+message GuessCardResult
+{
+    required int64 winscore = 1;               //输赢多少钱
+    required int32 leftcount = 2;               //剩下多少局 0是停止下注,如果金币不够也返回0,自动停止
+    required int64 selfscore = 3; //玩家身上金币数
+    required int64 tablemaxscore = 4; //桌子上最大下注数
+    required int32 sptype = 5;               //猜手牌类型
+}
+
+//每局猜手牌结果
+message GetUserHuoDongInfo
+{
+    required int32 playcount = 1;               //已打多少局
+    required int32 totalcount = 2;               //活动要求总局数
+    required int64 awardscore = 3;               //奖励多少金币
+}
+
+//看其他玩家手牌信息主动发给客户端
+message SeeOtherCardFeeInfo
+{
+    required int32  seehandcardcount  = 1 ;      //剩余查看卡数量
+    required int32 fee = 2;               //当前费用
+}
+
+//可以看其他玩家底牌
+message UpdateSeeOtherCard
+{
+    required int32 seehandcardcount  = 1 ;      //剩余查看卡数量
+    required int32 fee = 2;               //当前费用
+    repeated int32 useridlist  = 3 ;      //可以看其他玩家的ID表
+}
+
+//看其他玩家手牌结果 cmd:154
+message SeeOtherCardResult
+{
+    required int32 userid = 1;               //目标玩家
+    repeated int32 handcards   = 2;             //手牌
+    required int64 selfscore = 3; //玩家身上金币数
+    required int64 tablemaxscore = 4; //桌子上最大下注数
+    required int32 cardtype = 5; //牌型
+}
+//看其他玩家手牌请求 cmd:154
+message C_SeeOtherCard
+{
+    required int32 userid = 1;               //玩家ID
+}
+
+//改变自己手牌信息 
+message ChangeHandCardFeeInfo
+{
+    required int32  shuaxincardcount  = 1 ;      //剩余刷新卡数量
+    required int32  niubcardcount  = 2 ;      //剩余牛B卡数量
+    required int32 fee = 3;               //当前费用
+}
+
+//改变自己手牌结果
+message ChangeHandCardResult
+{
+    required int32  ret  = 1 ;      //0成功 1.失败
+    repeated int32 handcards   = 2;             //手牌
+    required int64 selfscore = 3; //玩家身上金币数
+    required int64 tablemaxscore = 4; //桌子上最大下注数
+}
+
+//
+message UserGetGood
+{
+    required int32 goodid  = 1 ;      //道具ID
+    required int32 goodcount = 2;             //数量
+    required int32 goodtype = 3;             //
+}
+
+//
+message AAShouPaiWinRes
+{
+    required int64 winscore  = 1 ;      //赢取金币
+}
+
+////#####################[房卡场接口]################################
+//桌子配置
+message TableConfig
+{
+        required int32  tableid      = 1;     //桌子号
+       	required string tablename    = 2;    //桌子名称            
+        required int32  xiaomangbet  = 3;    //小盲
+        required int32  frontbet     = 4;    //前注   ( 0:非必下， >0:必下值)
+        required int32  lefttime     = 5;    //分钟   
+        required int32  person       = 6;    //最大人数  
+        required int32  passwd       = 7 [default = 123456];  //密码
+        required int32  bringmingold  = 8;    //带入最小值
+        required int32  bringmaxgold  = 9;    //带入最大值
+        required int32  online_person  = 10 ; //在线人数
+}
+//VIP桌子创建  0X64
+message CreateTable
+{
+	required TableConfig tableconfig   = 1;  
+}
+message CreateTableResponse
+{
+        required int32 tableid    = 1;
+}
+
+
+//桌子密码验证    0X65
+message TablePwdValidate
+{
+    required int32 tableid   = 1;   
+    required int32 passwd    = 2;
+}
+message TableValidateResponse
+{
+    required int32 validateno          = 1;     //100成功，其它均为密码错误
+    required TableConfig tableconfig   = 2;     //
+}
+
+
+//Vip房桌子查找   0x66
+message VipTableSearchRequst 
+{
+    required int32  searchtype       = 1;  //-1:所有  1:userid查询 2:tableid 查询
+    required int32  searchvalue      = 2;
+    required int32  table_startindex = 3;
+    required int32  table_endindex   = 4;
+}
+
+message VipTableSearchResponse
+{
+    repeated TableConfig tableconfig   = 1;
+    required int32  searchtype         = 2; //-1:所有  1:userid查询 2:tableid 查询 
+}

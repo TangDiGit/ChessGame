@@ -1,0 +1,10 @@
+{
+    "ipVer": 20210529,
+    "mainIpAddress": "http://bzpoke.cn:80/static/",
+    "developmentIpAddress": "http://192.168.0.7:80/static/",
+    "localIpAddress": "http://127.0.0.1:8080/",
+    "server_type": 3,
+    "download_type": 2,
+    "enable_debug": true,
+    "enable_hot_update":false
+}

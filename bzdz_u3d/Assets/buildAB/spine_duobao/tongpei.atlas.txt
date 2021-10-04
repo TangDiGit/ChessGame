@@ -1,0 +1,34 @@
+
+tongpei.png
+size: 2048,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ceng
+  rotate: true
+  xy: 961, 2
+  size: 226, 241
+  orig: 226, 241
+  offset: 0, 0
+  index: -1
+maozi
+  rotate: false
+  xy: 1204, 60
+  size: 228, 168
+  orig: 228, 168
+  offset: 0, 0
+  index: -1
+ui_1_3_1
+  rotate: false
+  xy: 623, 58
+  size: 336, 170
+  orig: 336, 170
+  offset: 0, 0
+  index: -1
+ui_1_4
+  rotate: false
+  xy: 2, 91
+  size: 619, 137
+  orig: 619, 137
+  offset: 0, 0
+  index: -1

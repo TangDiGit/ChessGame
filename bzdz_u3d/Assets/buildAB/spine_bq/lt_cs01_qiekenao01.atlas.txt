@@ -1,0 +1,153 @@
+
+lt_cs01_qiekenao01.png
+size: 512,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+arm_l
+  rotate: false
+  xy: 213, 4
+  size: 36, 25
+  orig: 36, 25
+  offset: 0, 0
+  index: -1
+arm_r
+  rotate: false
+  xy: 446, 5
+  size: 33, 26
+  orig: 33, 26
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 148, 19
+  size: 63, 43
+  orig: 63, 43
+  offset: 0, 0
+  index: -1
+ear
+  rotate: true
+  xy: 97, 2
+  size: 14, 20
+  orig: 14, 20
+  offset: 0, 0
+  index: -1
+eye_l
+  rotate: true
+  xy: 272, 5
+  size: 19, 23
+  orig: 19, 23
+  offset: 0, 0
+  index: -1
+eye_r
+  rotate: true
+  xy: 406, 2
+  size: 21, 23
+  orig: 21, 23
+  offset: 0, 0
+  index: -1
+face
+  rotate: false
+  xy: 2, 6
+  size: 68, 56
+  orig: 68, 56
+  offset: 0, 0
+  index: -1
+gth
+  rotate: false
+  xy: 363, 28
+  size: 41, 34
+  orig: 41, 34
+  offset: 0, 0
+  index: -1
+hand_l
+  rotate: false
+  xy: 482, 47
+  size: 28, 15
+  orig: 28, 15
+  offset: 0, 0
+  index: -1
+hand_r
+  rotate: false
+  xy: 72, 2
+  size: 23, 14
+  orig: 23, 14
+  offset: 0, 0
+  index: -1
+hat1
+  rotate: false
+  xy: 72, 18
+  size: 74, 44
+  orig: 74, 44
+  offset: 0, 0
+  index: -1
+hat2
+  rotate: false
+  xy: 251, 5
+  size: 19, 24
+  orig: 19, 24
+  offset: 0, 0
+  index: -1
+hat3
+  rotate: false
+  xy: 213, 31
+  size: 57, 31
+  orig: 57, 31
+  offset: 0, 0
+  index: -1
+hat4
+  rotate: false
+  xy: 272, 26
+  size: 47, 36
+  orig: 47, 36
+  offset: 0, 0
+  index: -1
+hz1
+  rotate: true
+  xy: 119, 2
+  size: 14, 15
+  orig: 14, 15
+  offset: 0, 0
+  index: -1
+hz2
+  rotate: false
+  xy: 363, 2
+  size: 41, 24
+  orig: 41, 24
+  offset: 0, 0
+  index: -1
+ke
+  rotate: false
+  xy: 446, 33
+  size: 34, 29
+  orig: 34, 29
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 482, 37
+  size: 16, 8
+  orig: 16, 8
+  offset: 0, 0
+  index: -1
+nao
+  rotate: false
+  xy: 406, 25
+  size: 38, 37
+  orig: 38, 37
+  offset: 0, 0
+  index: -1
+qie
+  rotate: false
+  xy: 321, 26
+  size: 40, 36
+  orig: 40, 36
+  offset: 0, 0
+  index: -1
+star
+  rotate: false
+  xy: 431, 2
+  size: 10, 21
+  orig: 10, 21
+  offset: 0, 0
+  index: -1

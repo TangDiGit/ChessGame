@@ -1,0 +1,41 @@
+
+hd_gongjian01_end.png
+size: 256,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/arrow
+  rotate: true
+  xy: 2, 29
+  size: 25, 89
+  orig: 25, 89
+  offset: 0, 0
+  index: -1
+images/arrow2
+  rotate: true
+  xy: 2, 2
+  size: 25, 38
+  orig: 25, 38
+  offset: 0, 0
+  index: -1
+images/fx3
+  rotate: false
+  xy: 42, 11
+  size: 17, 16
+  orig: 17, 16
+  offset: 0, 0
+  index: -1
+images/fx4
+  rotate: false
+  xy: 93, 16
+  size: 49, 38
+  orig: 49, 38
+  offset: 0, 0
+  index: -1
+images/shadow
+  rotate: false
+  xy: 144, 22
+  size: 19, 32
+  orig: 19, 32
+  offset: 0, 0
+  index: -1

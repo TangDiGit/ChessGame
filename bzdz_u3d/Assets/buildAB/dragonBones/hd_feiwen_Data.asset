@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec95f584fa5ecf4baaae86dc3920a1b, type: 3}
+  m_Name: hd_feiwen_Data
+  m_EditorClassIdentifier: 
+  dataName: hd_feiwen
+  dragonBonesJSON: {fileID: 4900000, guid: 2193bb034a7628549ae6d16941bf5f83, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: ca3846a8ee2b07243bfa2318f4839809, type: 3}
+    texture: {fileID: 2800000, guid: eb749aa5aa4aa484295ac8c9135942c6, type: 3}
+    material: {fileID: 2100000, guid: b736666d3be3c98478073cb943ec0e9d, type: 2}
+    uiMaterial: {fileID: 2100000, guid: 8f48f04b69696c849a402b870c2eea64, type: 2}

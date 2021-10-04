@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec95f584fa5ecf4baaae86dc3920a1b, type: 3}
+  m_Name: BoartPoker_button_Data
+  m_EditorClassIdentifier: 
+  dataName: BoartPoker_button
+  dragonBonesJSON: {fileID: 4900000, guid: 31667e38a52ef7a40bd7ca5e7517b537, type: 3}
+  textureAtlas:
+  - textureAtlasJSON: {fileID: 4900000, guid: e4b977ae11a7e64469ca0a50218fa361, type: 3}
+    texture: {fileID: 2800000, guid: 71b6db84c54024d4cb817706b38d6007, type: 3}
+    material: {fileID: 2100000, guid: da712b72ba5747a458885f2f8eb1efdd, type: 2}
+    uiMaterial: {fileID: 2100000, guid: d4cb4fee2705c124fb2c883a6fd331aa, type: 2}

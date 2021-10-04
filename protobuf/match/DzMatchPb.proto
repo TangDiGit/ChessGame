@@ -1,0 +1,114 @@
+package com.game.dzmatch;
+//服务器主动发到客户端
+//等待开始场景 cmd=1
+message WaitSceneInfo
+{
+    required int32 starttime = 1; //离比赛开始多少秒，比赛中为0
+    required int32 usercount = 2; //进场玩家
+    required int64 cellscore = 3; //底分
+    required int64 frontgold = 4; //前注
+}
+
+//比赛场景 cmd=2
+message PlaySceneInfo
+{
+    required int32 usercount = 1; //玩家数
+    required int32 selfno = 2; //自己排名（观战为0）
+    required int32 updatecellscoreleavetime = 3; //下次升盲时间(秒)
+    required int32 curcellscoreindex = 4; //当前盲注级别
+    required int64 cellscore = 5; //底分
+    required int32 tablecount = 6; //桌子多少
+    required int64 frontgold = 7; //前注
+}
+
+//更新比赛玩家数量 cmd=3
+message UpdateUserCount
+{
+    required int32 usercount = 1; //玩家数
+    required int32 selfno = 2; //自己排名（观战为0）
+}
+
+//更新比赛底分 cmd=4
+message UpdateCellScore
+{
+    required int32 updatecellscoreleavetime = 1; //下次升盲时间(秒)
+    required int64 cellscore = 2; //
+    required int32 curcellscoreindex = 3; //当前盲注级别
+    required int64 frontgold = 4; //前注
+}
+
+//换桌通知 cmd=5
+message UpdateChangeTable
+{
+    required int32 type = 1; //1.通知等待换桌 2.换桌完成 3.其他玩家拼桌子
+    required int32 tablecount = 2; //还剩多少桌子
+}
+
+//增购和重购通知 cmd=6
+message UpdateBuyScore
+{
+    required int32 type = 1; //1.rebuy 2.addon
+    required int32 bcanbuy = 2; //0:不能买入 1.可以买入
+    required int32 curmatchscore = 3; //当前多少分数
+    required int32 buycount = 4; //买了多少次
+}
+
+//淘汰 cmd=7
+message UserExitMatch
+{
+	required int32 userid = 1; //
+    required string nickname = 2; //
+    required int32 paiming = 3; //
+    required int32 rewardscore = 4; //
+    required int32 goodsid = 5; //
+    required int32 goodscount = 6; //
+}
+
+//客户端请求返回
+// cmd=9
+//当前比赛信息
+message MatchCurInfo
+{
+	required int32 playusercount = 1; //玩家数量
+    required int32 cansaiusercount = 2; //参赛数量
+    required int32 awardcount = 3; //奖励玩家人数
+    required int32 matchplaytime = 4; //比赛耗时 秒
+    required int64 preusermatchscore = 5; //平均筹码
+    required int64 totalusermatchscore = 6; //总筹码
+    required int64 cellscore = 7; //当前盲注
+    required int64 nextcellscore = 8; //下级盲注
+    required int64 curcellscoreindex = 9; //当前盲注级别
+    required int32 updatecellscoreleavetime = 10; //下次升盲时间(秒)
+}
+
+//增购和重购结果
+message BuyScoreRes
+{
+    required int32 type = 1; //1.rebuy 2.addon
+    required int32 matchscore = 2; //分数
+    required int64 score = 3; //金币
+    required int32 addmatchscore = 4; //增加了多少分数
+}
+
+//比赛状态修改
+message MatchStageChange
+{
+    required int32 matchid = 1; //比赛ID
+    required int32 matchstage = 2; //修改状态
+}
+
+//客户端请求
+//买分 cmd=1
+message C_Login
+{
+    required string info = 1;
+    required int32 userid = 2; //玩家有ID
+    required int32 matchid = 3; //比赛ID
+}
+//买分 cmd=10
+message C_UserBuyScore
+{
+	required int32 type = 1; //1.rebuy 2.addon
+}
+
+
